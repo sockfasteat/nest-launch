@@ -7,7 +7,6 @@ import { LaunchResolver } from './launch/launch.resolver';
 import { DataSourceModule } from './datasource/datasource.module';
 import UserAPI from './datasource/user';
 import * as isEmail from 'isemail';
-import { TypeOrmModule } from '@nestjs/typeorm';
 import { getRepository } from 'typeorm';
 import { userProvider } from './user/user.provider';
 import { tripProvider } from './user/trip.provider';
@@ -15,6 +14,7 @@ import { DatabaseModule } from './core/database/database.module';
 import { UserResolver } from './user/user.resolver';
 import { UserEntity, TripEntity } from './entities';
 import { AuthResolvers } from './user/auth.resolver';
+// import { TypeOrmModule } from '@nestjs/typeorm';
 
 // set up any dataSources our resolvers need
 const dataSources = () => ({

@@ -1,10 +1,8 @@
 import * as isEmail from 'isemail';
-import { getConnection, getRepository, Repository } from 'typeorm';
+import { getConnection, Repository } from 'typeorm';
 import { DataSource } from 'apollo-datasource';
-import { HttpException, HttpStatus, Inject, Injectable } from '@nestjs/common';
-import { TRIP_REPOSITORY, USER_REPOSITORY } from '../common/constants';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { TripEntity, UserEntity } from '../entities';
-import { InjectRepository } from '@nestjs/typeorm';
 import { SignUpUserDto } from '../user/models/user.dto';
 
 @Injectable()
@@ -12,20 +10,10 @@ class UserAPI extends DataSource {
   private context;
   private usersRepository: Repository<UserEntity>;
   private tripRepository: Repository<TripEntity>;
-  // @Inject(USER_REPOSITORY)
-  // @InjectRepository(UserEntity)
-  // @Inject(TRIP_REPOSITORY)
-  // @InjectRepository(TripEntity)
-  constructor(
-    // @Inject(USER_REPOSITORY)
-    // private usersRepository: Repository<UserEntity>,
-    // // @Inject(TRIP_REPOSITORY)
-    // private tripRepository: Repository<TripEntity>,
-    ) {
+
+  constructor() {
     super();
     this.getConnection();
-    // this.usersRepository = getRepository(UserEntity);
-    // this.tripRepository = getRepository(TripEntity);
   }
 
   async getConnection() {
@@ -129,10 +117,8 @@ class UserAPI extends DataSource {
 
   async cancelTrip({ launchId }) {
     const userId = this.context.me.id;
-    // TODO: ????
     const trip = await this.tripRepository.findOne({
-      where: { launchId: launchId, userId },
-      relations: ['user']
+      where: { launchId: launchId, user: { id: userId } }
     });
 
     if (!trip) {
@@ -148,10 +134,8 @@ class UserAPI extends DataSource {
 
   async getLaunchIdsByUser() {
     const userId = this.context.me.id;
-    // TODO: ????
     const found = await this.tripRepository.find({
-      where: { userId },
-      relations: ['user'],
+      where: { user: { id: userId } },
     });
 
     return found && found.length
@@ -165,8 +149,7 @@ class UserAPI extends DataSource {
     }
     const userId = this.context.me.id;
     const found = await this.tripRepository.find({
-      where: { launchId: launchId, userId },
-      relations: ['user']
+      where: { launchId: launchId, user: { id: userId } },
     });
     return found && found.length > 0;
   }

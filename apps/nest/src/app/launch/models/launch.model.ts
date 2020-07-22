@@ -1,7 +1,6 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
 import { Mission } from './mission.model';
 import { Rocket } from './rocket.model';
-import { User } from '../../user/models/user.model';
 
 @ObjectType()
 export class Launch {

@@ -5,7 +5,6 @@ import {
   ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn
 } from 'typeorm';
 import { UserEntity } from './user.entity';
-import { Field, ID } from '@nestjs/graphql';
 
 // TypeORM entity. This repository design pattern allows these repositories can be obtained from the database connection.
 @Entity()
