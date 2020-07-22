@@ -21,6 +21,12 @@ type Launch {
   cursor: String!
 }
 
+type TripUpdateResponse {
+  success: Boolean!
+  message: String!
+  launches: [Launch!]!
+}
+
 type LaunchConnection {
   cursor: Float!
   hasMore: Boolean!
@@ -38,7 +44,7 @@ type User {
 
 type Query {
   getLaunch(id: Float!): Launch!
-  getLaunches(after: String!, pageSize: Float!): LaunchConnection!
+  getLaunches(after: String, pageSize: Float!): LaunchConnection!
   isBooked(launchId: String!): Boolean!
   getTrips: [Launch!]!
 
@@ -47,6 +53,7 @@ type Query {
 }
 
 type Mutation {
+  bookTrips(launchIds: [ID!]!): TripUpdateResponse!
   signIn(email: String!): String!
   signUp(email: String!, userName: String!, lastName: String!, firstName: String!): User!
 }

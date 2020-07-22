@@ -21,7 +21,9 @@ export class LaunchResolver {
   async getLaunches(
     @Context('dataSources') { launchAPI }: DataSources,
     @Args('pageSize') pageSize: number = 20,
-    @Args('after') after?: string,
+    @Args('after', {
+      nullable: true,
+    }) after?: string,
   ): Promise<LaunchConnection> {
     const allLaunches = await launchAPI.getAllLaunches();
     // we want these in reverse chronological order

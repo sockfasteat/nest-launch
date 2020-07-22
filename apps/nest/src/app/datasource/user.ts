@@ -112,26 +112,26 @@ class UserAPI extends DataSource {
     const userId: string = this.context.me.id;
     const user: UserEntity = this.context.me;
 
-    const trip = await this.tripRepository.createQueryBuilder('trip')
-      .leftJoinAndSelect('trip.user', 'user')
-      .where('user.id = :userId', { userId })
-      .andWhere('trip.id = :launchId', { launchId });
+    const trip = await this.tripRepository.findOne({
+      where: { launchId: launchId, user: { id: userId } }
+    });
 
     if (trip) {
       return trip;
     }
 
     const newTrip = new TripEntity();
-    newTrip.id = launchId;
-    newTrip.user = user;
-    return await this.tripRepository.save(newTrip) as TripEntity;
+    newTrip.launchId = launchId;
+    const result = await this.tripRepository.create({ ...newTrip, user });
+
+    return await this.tripRepository.save(result);
   }
 
   async cancelTrip({ launchId }) {
     const userId = this.context.me.id;
     // TODO: ????
     const trip = await this.tripRepository.findOne({
-      where: { id: launchId, userId },
+      where: { launchId: launchId, userId },
       relations: ['user']
     });
 
@@ -155,7 +155,7 @@ class UserAPI extends DataSource {
     });
 
     return found && found.length
-      ? found.map(l => l.id).filter(l => !!l)
+      ? found.map(l => l.launchId).filter(l => !!l)
       : [];
   }
 
@@ -165,7 +165,7 @@ class UserAPI extends DataSource {
     }
     const userId = this.context.me.id;
     const found = await this.tripRepository.find({
-      where: { id: launchId, userId },
+      where: { launchId: launchId, userId },
       relations: ['user']
     });
     return found && found.length > 0;

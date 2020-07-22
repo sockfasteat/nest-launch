@@ -30,30 +30,3 @@ export const paginateResults = (
       )
     : results.slice(0, pageSize);
 };
-
-// export const createStore = () => {
-//   const db = new Sequelize({
-//     dialect: 'sqlite',
-//     storage: './store.sqlite'
-//   });
-//
-//   const users = db.define('user', {
-//     createdAt: Sql.DATE,
-//     updatedAt: Sql.DATE,
-//     email: Sql.STRING,
-//     // profileImage: Sequelize.STRING,
-//     firstName: Sql.STRING,
-//     lastName: Sql.STRING,
-//     userName: Sql.STRING,
-//     token: Sql.STRING,
-//   });
-//
-//   const trips = db.define('trip', {
-//     createdAt: Sql.DATE,
-//     updatedAt: Sql.DATE,
-//     launchId: Sql.INTEGER,
-//     userId: Sql.INTEGER,
-//   });
-//
-//   return { db, users, trips };
-// };

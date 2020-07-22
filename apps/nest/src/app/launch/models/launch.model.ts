@@ -6,10 +6,10 @@ import { User } from '../../user/models/user.model';
 @ObjectType()
 export class Launch {
   @Field(type => ID)
-  id: string;
+  id: number;
 
   @Field()
-  site: string;
+  site?: string;
 
   @Field()
   mission?: Mission;
@@ -24,3 +24,14 @@ export class Launch {
   // user?: User;
 }
 
+@ObjectType()
+export class TripUpdateResponse {
+  @Field()
+  success: boolean;
+
+  @Field()
+  message: string;
+
+  @Field(type => [Launch])
+  launches: Launch[];
+}
