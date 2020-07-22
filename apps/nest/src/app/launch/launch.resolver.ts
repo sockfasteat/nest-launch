@@ -1,8 +1,8 @@
 import { Query, Resolver, Args, Context } from '@nestjs/graphql';
 import { paginateResults } from '../utils/utils';
-import { DataSourcesType } from '../app.module';
 import { Launch } from './models/launch.model';
 import { LaunchConnection } from './models/launch-connection.model';
+import { DataSources } from '../common/models/models';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 @Resolver(of => Launch)
@@ -10,7 +10,7 @@ export class LaunchResolver {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   @Query(returns => Launch)
   async getLaunch(
-    @Context('dataSources') { launchAPI }: DataSourcesType,
+    @Context('dataSources') { launchAPI }: DataSources,
     @Args('id') id: number,
   ): Promise<Launch> {
     return await launchAPI.getLaunchById({ launchId: id })
@@ -19,8 +19,8 @@ export class LaunchResolver {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   @Query(returns => LaunchConnection)
   async getLaunches(
-    @Context('dataSources') { launchAPI }: DataSourcesType,
-    @Args('pageSize') pageSize = 20,
+    @Context('dataSources') { launchAPI }: DataSources,
+    @Args('pageSize') pageSize: number = 20,
     @Args('after') after?: string,
   ): Promise<LaunchConnection> {
     const allLaunches = await launchAPI.getAllLaunches();

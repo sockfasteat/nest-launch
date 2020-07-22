@@ -1,5 +1,5 @@
-import LaunchAPI from '../datasource/launch';
-import UserAPI from '../datasource/user';
+import LaunchAPI from '../../datasource/launch';
+import UserAPI from '../../datasource/user';
 
 export type DataSources = {
   launchAPI: LaunchAPI,

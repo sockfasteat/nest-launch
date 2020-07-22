@@ -21,5 +21,16 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "react": {
+      "tags": []
+    },
+    "react-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react"]
+    },
+    "nest": {
+      "tags": []
+    }
+  }
 }

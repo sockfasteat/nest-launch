@@ -1,0 +1,52 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mission {
+  name: String!
+  missionPatch: String
+}
+
+type Rocket {
+  id: ID!
+  name: String!
+  type: String!
+}
+
+type Launch {
+  id: ID!
+  site: String!
+  mission: Mission!
+  rocket: Rocket!
+  cursor: String!
+}
+
+type LaunchConnection {
+  cursor: Float!
+  hasMore: Boolean!
+  launches: [Launch!]!
+}
+
+type User {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  userName: String!
+  email: String!
+  trips: [Launch!]!
+}
+
+type Query {
+  getLaunch(id: Float!): Launch!
+  getLaunches(after: String!, pageSize: Float!): LaunchConnection!
+  isBooked(launchId: String!): Boolean!
+  getTrips: [Launch!]!
+
+  """Returns the current logged user."""
+  me: User
+}
+
+type Mutation {
+  signIn(email: String!): String!
+  signUp(email: String!, userName: String!, lastName: String!, firstName: String!): User!
+}
