@@ -69,7 +69,7 @@
     ora "4.0.4"
     rxjs "6.5.5"
 
-"@apollo/client@latest":
+"@apollo/client@^3.0.2", "@apollo/client@latest":
   version "3.0.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@apollo/client/-/client-3.0.2.tgz#fadb2b39a0e32950baaef2566442cb3f6de74a52"
   integrity sha1-+tsrOaDjKVC6rvJWZELLP23nSlI=
@@ -243,6 +243,28 @@
     invariant "^2.2.4"
     semver "^5.5.0"
 
+"@babel/core@7.10.5", "@babel/core@^7.0.0", "@babel/core@^7.0.1", "@babel/core@^7.1.0", "@babel/core@^7.7.5", "@babel/core@^7.9.0":
+  version "7.10.5"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/core/-/core-7.10.5.tgz#1f15e2cca8ad9a1d78a38ddba612f5e7cdbbd330"
+  integrity sha1-HxXizKitmh14o43bphL158270zA=
+  dependencies:
+    "@babel/code-frame" "^7.10.4"
+    "@babel/generator" "^7.10.5"
+    "@babel/helper-module-transforms" "^7.10.5"
+    "@babel/helpers" "^7.10.4"
+    "@babel/parser" "^7.10.5"
+    "@babel/template" "^7.10.4"
+    "@babel/traverse" "^7.10.5"
+    "@babel/types" "^7.10.5"
+    convert-source-map "^1.7.0"
+    debug "^4.1.0"
+    gensync "^1.0.0-beta.1"
+    json5 "^2.1.2"
+    lodash "^4.17.19"
+    resolve "^1.3.2"
+    semver "^5.4.1"
+    source-map "^0.5.0"
+
 "@babel/core@7.9.6":
   version "7.9.6"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/core/-/core-7.9.6.tgz#d9aa1f580abf3b2286ef40b6904d390904c63376"
@@ -261,28 +283,6 @@
     gensync "^1.0.0-beta.1"
     json5 "^2.1.2"
     lodash "^4.17.13"
-    resolve "^1.3.2"
-    semver "^5.4.1"
-    source-map "^0.5.0"
-
-"@babel/core@^7.0.0", "@babel/core@^7.0.1", "@babel/core@^7.1.0", "@babel/core@^7.7.5", "@babel/core@^7.9.0":
-  version "7.10.5"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/core/-/core-7.10.5.tgz#1f15e2cca8ad9a1d78a38ddba612f5e7cdbbd330"
-  integrity sha1-HxXizKitmh14o43bphL158270zA=
-  dependencies:
-    "@babel/code-frame" "^7.10.4"
-    "@babel/generator" "^7.10.5"
-    "@babel/helper-module-transforms" "^7.10.5"
-    "@babel/helpers" "^7.10.4"
-    "@babel/parser" "^7.10.5"
-    "@babel/template" "^7.10.4"
-    "@babel/traverse" "^7.10.5"
-    "@babel/types" "^7.10.5"
-    convert-source-map "^1.7.0"
-    debug "^4.1.0"
-    gensync "^1.0.0-beta.1"
-    json5 "^2.1.2"
-    lodash "^4.17.19"
     resolve "^1.3.2"
     semver "^5.4.1"
     source-map "^0.5.0"
@@ -1063,7 +1063,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-transform-typescript@^7.9.0":
+"@babel/plugin-transform-typescript@^7.10.4", "@babel/plugin-transform-typescript@^7.9.0":
   version "7.10.5"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.10.5.tgz#edf353944e979f40d8ff9fe4e9975d0a465037c5"
   integrity sha1-7fNTlE6Xn0DY/5/k6ZddCkZQN8U=
@@ -1087,73 +1087,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.10.4"
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/preset-env@7.9.6":
-  version "7.9.6"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/preset-env/-/preset-env-7.9.6.tgz#df063b276c6455ec6fcfc6e53aacc38da9b0aea6"
-  integrity sha1-3wY7J2xkVexvz8blOqzDjamwrqY=
-  dependencies:
-    "@babel/compat-data" "^7.9.6"
-    "@babel/helper-compilation-targets" "^7.9.6"
-    "@babel/helper-module-imports" "^7.8.3"
-    "@babel/helper-plugin-utils" "^7.8.3"
-    "@babel/plugin-proposal-async-generator-functions" "^7.8.3"
-    "@babel/plugin-proposal-dynamic-import" "^7.8.3"
-    "@babel/plugin-proposal-json-strings" "^7.8.3"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.8.3"
-    "@babel/plugin-proposal-numeric-separator" "^7.8.3"
-    "@babel/plugin-proposal-object-rest-spread" "^7.9.6"
-    "@babel/plugin-proposal-optional-catch-binding" "^7.8.3"
-    "@babel/plugin-proposal-optional-chaining" "^7.9.0"
-    "@babel/plugin-proposal-unicode-property-regex" "^7.8.3"
-    "@babel/plugin-syntax-async-generators" "^7.8.0"
-    "@babel/plugin-syntax-dynamic-import" "^7.8.0"
-    "@babel/plugin-syntax-json-strings" "^7.8.0"
-    "@babel/plugin-syntax-nullish-coalescing-operator" "^7.8.0"
-    "@babel/plugin-syntax-numeric-separator" "^7.8.0"
-    "@babel/plugin-syntax-object-rest-spread" "^7.8.0"
-    "@babel/plugin-syntax-optional-catch-binding" "^7.8.0"
-    "@babel/plugin-syntax-optional-chaining" "^7.8.0"
-    "@babel/plugin-syntax-top-level-await" "^7.8.3"
-    "@babel/plugin-transform-arrow-functions" "^7.8.3"
-    "@babel/plugin-transform-async-to-generator" "^7.8.3"
-    "@babel/plugin-transform-block-scoped-functions" "^7.8.3"
-    "@babel/plugin-transform-block-scoping" "^7.8.3"
-    "@babel/plugin-transform-classes" "^7.9.5"
-    "@babel/plugin-transform-computed-properties" "^7.8.3"
-    "@babel/plugin-transform-destructuring" "^7.9.5"
-    "@babel/plugin-transform-dotall-regex" "^7.8.3"
-    "@babel/plugin-transform-duplicate-keys" "^7.8.3"
-    "@babel/plugin-transform-exponentiation-operator" "^7.8.3"
-    "@babel/plugin-transform-for-of" "^7.9.0"
-    "@babel/plugin-transform-function-name" "^7.8.3"
-    "@babel/plugin-transform-literals" "^7.8.3"
-    "@babel/plugin-transform-member-expression-literals" "^7.8.3"
-    "@babel/plugin-transform-modules-amd" "^7.9.6"
-    "@babel/plugin-transform-modules-commonjs" "^7.9.6"
-    "@babel/plugin-transform-modules-systemjs" "^7.9.6"
-    "@babel/plugin-transform-modules-umd" "^7.9.0"
-    "@babel/plugin-transform-named-capturing-groups-regex" "^7.8.3"
-    "@babel/plugin-transform-new-target" "^7.8.3"
-    "@babel/plugin-transform-object-super" "^7.8.3"
-    "@babel/plugin-transform-parameters" "^7.9.5"
-    "@babel/plugin-transform-property-literals" "^7.8.3"
-    "@babel/plugin-transform-regenerator" "^7.8.7"
-    "@babel/plugin-transform-reserved-words" "^7.8.3"
-    "@babel/plugin-transform-shorthand-properties" "^7.8.3"
-    "@babel/plugin-transform-spread" "^7.8.3"
-    "@babel/plugin-transform-sticky-regex" "^7.8.3"
-    "@babel/plugin-transform-template-literals" "^7.8.3"
-    "@babel/plugin-transform-typeof-symbol" "^7.8.4"
-    "@babel/plugin-transform-unicode-regex" "^7.8.3"
-    "@babel/preset-modules" "^0.1.3"
-    "@babel/types" "^7.9.6"
-    browserslist "^4.11.1"
-    core-js-compat "^3.6.2"
-    invariant "^2.2.2"
-    levenary "^1.1.1"
-    semver "^5.5.0"
-
-"@babel/preset-env@^7.0.0", "@babel/preset-env@^7.9.5":
+"@babel/preset-env@7.10.4", "@babel/preset-env@^7.0.0", "@babel/preset-env@^7.9.5":
   version "7.10.4"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/preset-env/-/preset-env-7.10.4.tgz#fbf57f9a803afd97f4f32e4f798bb62e4b2bef5f"
   integrity sha1-+/V/moA6/Zf08y5PeYu2Lksr718=
@@ -1223,6 +1157,72 @@
     levenary "^1.1.1"
     semver "^5.5.0"
 
+"@babel/preset-env@7.9.6":
+  version "7.9.6"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/preset-env/-/preset-env-7.9.6.tgz#df063b276c6455ec6fcfc6e53aacc38da9b0aea6"
+  integrity sha1-3wY7J2xkVexvz8blOqzDjamwrqY=
+  dependencies:
+    "@babel/compat-data" "^7.9.6"
+    "@babel/helper-compilation-targets" "^7.9.6"
+    "@babel/helper-module-imports" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/plugin-proposal-async-generator-functions" "^7.8.3"
+    "@babel/plugin-proposal-dynamic-import" "^7.8.3"
+    "@babel/plugin-proposal-json-strings" "^7.8.3"
+    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.8.3"
+    "@babel/plugin-proposal-numeric-separator" "^7.8.3"
+    "@babel/plugin-proposal-object-rest-spread" "^7.9.6"
+    "@babel/plugin-proposal-optional-catch-binding" "^7.8.3"
+    "@babel/plugin-proposal-optional-chaining" "^7.9.0"
+    "@babel/plugin-proposal-unicode-property-regex" "^7.8.3"
+    "@babel/plugin-syntax-async-generators" "^7.8.0"
+    "@babel/plugin-syntax-dynamic-import" "^7.8.0"
+    "@babel/plugin-syntax-json-strings" "^7.8.0"
+    "@babel/plugin-syntax-nullish-coalescing-operator" "^7.8.0"
+    "@babel/plugin-syntax-numeric-separator" "^7.8.0"
+    "@babel/plugin-syntax-object-rest-spread" "^7.8.0"
+    "@babel/plugin-syntax-optional-catch-binding" "^7.8.0"
+    "@babel/plugin-syntax-optional-chaining" "^7.8.0"
+    "@babel/plugin-syntax-top-level-await" "^7.8.3"
+    "@babel/plugin-transform-arrow-functions" "^7.8.3"
+    "@babel/plugin-transform-async-to-generator" "^7.8.3"
+    "@babel/plugin-transform-block-scoped-functions" "^7.8.3"
+    "@babel/plugin-transform-block-scoping" "^7.8.3"
+    "@babel/plugin-transform-classes" "^7.9.5"
+    "@babel/plugin-transform-computed-properties" "^7.8.3"
+    "@babel/plugin-transform-destructuring" "^7.9.5"
+    "@babel/plugin-transform-dotall-regex" "^7.8.3"
+    "@babel/plugin-transform-duplicate-keys" "^7.8.3"
+    "@babel/plugin-transform-exponentiation-operator" "^7.8.3"
+    "@babel/plugin-transform-for-of" "^7.9.0"
+    "@babel/plugin-transform-function-name" "^7.8.3"
+    "@babel/plugin-transform-literals" "^7.8.3"
+    "@babel/plugin-transform-member-expression-literals" "^7.8.3"
+    "@babel/plugin-transform-modules-amd" "^7.9.6"
+    "@babel/plugin-transform-modules-commonjs" "^7.9.6"
+    "@babel/plugin-transform-modules-systemjs" "^7.9.6"
+    "@babel/plugin-transform-modules-umd" "^7.9.0"
+    "@babel/plugin-transform-named-capturing-groups-regex" "^7.8.3"
+    "@babel/plugin-transform-new-target" "^7.8.3"
+    "@babel/plugin-transform-object-super" "^7.8.3"
+    "@babel/plugin-transform-parameters" "^7.9.5"
+    "@babel/plugin-transform-property-literals" "^7.8.3"
+    "@babel/plugin-transform-regenerator" "^7.8.7"
+    "@babel/plugin-transform-reserved-words" "^7.8.3"
+    "@babel/plugin-transform-shorthand-properties" "^7.8.3"
+    "@babel/plugin-transform-spread" "^7.8.3"
+    "@babel/plugin-transform-sticky-regex" "^7.8.3"
+    "@babel/plugin-transform-template-literals" "^7.8.3"
+    "@babel/plugin-transform-typeof-symbol" "^7.8.4"
+    "@babel/plugin-transform-unicode-regex" "^7.8.3"
+    "@babel/preset-modules" "^0.1.3"
+    "@babel/types" "^7.9.6"
+    browserslist "^4.11.1"
+    core-js-compat "^3.6.2"
+    invariant "^2.2.2"
+    levenary "^1.1.1"
+    semver "^5.5.0"
+
 "@babel/preset-modules@^0.1.3":
   version "0.1.3"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/preset-modules/-/preset-modules-0.1.3.tgz#13242b53b5ef8c883c3cf7dddd55b36ce80fbc72"
@@ -1233,6 +1233,19 @@
     "@babel/plugin-transform-dotall-regex" "^7.4.4"
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
+
+"@babel/preset-react@7.10.4", "@babel/preset-react@^7.9.4":
+  version "7.10.4"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/preset-react/-/preset-react-7.10.4.tgz#92e8a66d816f9911d11d4cc935be67adfc82dbcf"
+  integrity sha1-kuimbYFvmRHRHUzJNb5nrfyC288=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+    "@babel/plugin-transform-react-display-name" "^7.10.4"
+    "@babel/plugin-transform-react-jsx" "^7.10.4"
+    "@babel/plugin-transform-react-jsx-development" "^7.10.4"
+    "@babel/plugin-transform-react-jsx-self" "^7.10.4"
+    "@babel/plugin-transform-react-jsx-source" "^7.10.4"
+    "@babel/plugin-transform-react-pure-annotations" "^7.10.4"
 
 "@babel/preset-react@7.9.4":
   version "7.9.4"
@@ -1246,18 +1259,13 @@
     "@babel/plugin-transform-react-jsx-self" "^7.9.0"
     "@babel/plugin-transform-react-jsx-source" "^7.9.0"
 
-"@babel/preset-react@^7.9.4":
+"@babel/preset-typescript@7.10.4":
   version "7.10.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/preset-react/-/preset-react-7.10.4.tgz#92e8a66d816f9911d11d4cc935be67adfc82dbcf"
-  integrity sha1-kuimbYFvmRHRHUzJNb5nrfyC288=
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/preset-typescript/-/preset-typescript-7.10.4.tgz#7d5d052e52a682480d6e2cc5aa31be61c8c25e36"
+  integrity sha1-fV0FLlKmgkgNbizFqjG+YcjCXjY=
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
-    "@babel/plugin-transform-react-display-name" "^7.10.4"
-    "@babel/plugin-transform-react-jsx" "^7.10.4"
-    "@babel/plugin-transform-react-jsx-development" "^7.10.4"
-    "@babel/plugin-transform-react-jsx-self" "^7.10.4"
-    "@babel/plugin-transform-react-jsx-source" "^7.10.4"
-    "@babel/plugin-transform-react-pure-annotations" "^7.10.4"
+    "@babel/plugin-transform-typescript" "^7.10.4"
 
 "@babel/preset-typescript@7.9.0":
   version "7.9.0"
@@ -1267,7 +1275,7 @@
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/plugin-transform-typescript" "^7.9.0"
 
-"@babel/runtime-corejs3@^7.10.2", "@babel/runtime-corejs3@^7.8.3":
+"@babel/runtime-corejs3@^7.10.2":
   version "7.10.5"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/runtime-corejs3/-/runtime-corejs3-7.10.5.tgz#a57fe6c13045ca33768a2aa527ead795146febe1"
   integrity sha1-pX/mwTBFyjN2iiqlJ+rXlRRv6+E=
@@ -1275,7 +1283,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.10.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.10.5"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@babel/runtime/-/runtime-7.10.5.tgz#303d8bd440ecd5a491eae6117fd3367698674c5c"
   integrity sha1-MD2L1EDs1aSR6uYRf9M2dphnTFw=
@@ -1530,120 +1538,119 @@
     ts-node "^8"
     tslib "^1"
 
-"@graphql-tools/batch-delegate@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/batch-delegate/-/batch-delegate-6.0.14.tgz#f10806822c2384486f429339b47e1c7d1cb16bec"
-  integrity sha1-8QgGgiwjhEhvQpM5tH4cfRyxa+w=
+"@graphql-tools/batch-delegate@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/batch-delegate/-/batch-delegate-6.0.15.tgz#2c31b2a997ef8cadd6e7d41cc2e5f3fe88a669c8"
+  integrity sha1-LDGyqZfvjK3W59QcwuXz/oimacg=
   dependencies:
-    "@graphql-tools/delegate" "6.0.14"
+    "@graphql-tools/delegate" "6.0.15"
     dataloader "2.0.0"
     tslib "~2.0.0"
 
-"@graphql-tools/code-file-loader@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/code-file-loader/-/code-file-loader-6.0.14.tgz#f23a0125e18028b4bad01e262135f9883a2eecae"
-  integrity sha1-8joBJeGAKLS60B4mITX5iDou7K4=
+"@graphql-tools/code-file-loader@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/code-file-loader/-/code-file-loader-6.0.15.tgz#d4c04b6493ac658da13bb115e7ed6821e2c687f1"
+  integrity sha1-1MBLZJOsZY2hO7EV5+1oIeLGh/E=
   dependencies:
-    "@graphql-tools/graphql-tag-pluck" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/graphql-tag-pluck" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
     fs-extra "9.0.1"
     tslib "~2.0.0"
 
-"@graphql-tools/delegate@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/delegate/-/delegate-6.0.14.tgz#41a728d9d453ea698915aac7071c101dd7dd053b"
-  integrity sha1-Qaco2dRT6mmJFarHBxwQHdfdBTs=
+"@graphql-tools/delegate@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/delegate/-/delegate-6.0.15.tgz#9e060bfc31fe7735bd5b2b401e98dea3fa5d3b25"
+  integrity sha1-ngYL/DH+dzW9WytAHpjeo/pdOyU=
   dependencies:
     "@ardatan/aggregate-error" "0.0.1"
-    "@graphql-tools/schema" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/schema" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
     tslib "~2.0.0"
 
-"@graphql-tools/git-loader@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/git-loader/-/git-loader-6.0.14.tgz#245ffb6e83f050597c9bad5910b268f4b898fec1"
-  integrity sha1-JF/7boPwUFl8m61ZELJo9LiY/sE=
+"@graphql-tools/git-loader@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/git-loader/-/git-loader-6.0.15.tgz#b9c70e332943372f50c7ef4e1161a65d5bdac08e"
+  integrity sha1-uccOMylDNy9Qx+9OEWGmXVvawI4=
   dependencies:
-    "@graphql-tools/graphql-tag-pluck" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
-    simple-git "2.12.0"
+    "@graphql-tools/graphql-tag-pluck" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
 
-"@graphql-tools/github-loader@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/github-loader/-/github-loader-6.0.14.tgz#0e5037e8591f0b9580dae3d55d65dc24f02ae1e3"
-  integrity sha1-DlA36FkfC5WA2uPVXWXcJPAq4eM=
+"@graphql-tools/github-loader@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/github-loader/-/github-loader-6.0.15.tgz#2faccd5d20de87fba4762aa0e33659edd924da54"
+  integrity sha1-L6zNXSDeh/ukdiqg4zZZ7dkk2lQ=
   dependencies:
-    "@graphql-tools/graphql-tag-pluck" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/graphql-tag-pluck" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
     cross-fetch "3.0.5"
 
-"@graphql-tools/graphql-file-loader@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/graphql-file-loader/-/graphql-file-loader-6.0.14.tgz#45da45ea8640c1c168dc6387eccbd050182ec5b8"
-  integrity sha1-RdpF6oZAwcFo3GOH7MvQUBguxbg=
+"@graphql-tools/graphql-file-loader@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/graphql-file-loader/-/graphql-file-loader-6.0.15.tgz#e186b8147397bd7510e1b3318f5d3f7d365fc4e1"
+  integrity sha1-4Ya4FHOXvXUQ4bMxj10/fTZfxOE=
   dependencies:
-    "@graphql-tools/import" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/import" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
     fs-extra "9.0.1"
     tslib "~2.0.0"
 
-"@graphql-tools/graphql-tag-pluck@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/graphql-tag-pluck/-/graphql-tag-pluck-6.0.14.tgz#cc3be7e5aeebb563edbea81c1a18602a9a863a97"
-  integrity sha1-zDvn5a7rtWPtvqgcGhhgKpqGOpc=
+"@graphql-tools/graphql-tag-pluck@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/graphql-tag-pluck/-/graphql-tag-pluck-6.0.15.tgz#0e519202bc21faf068a22528b2e10d196e181aa6"
+  integrity sha1-DlGSArwh+vBooiUosuENGW4YGqY=
   dependencies:
     "@babel/parser" "7.10.5"
     "@babel/traverse" "7.10.5"
     "@babel/types" "7.10.5"
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/utils" "6.0.15"
   optionalDependencies:
     vue-template-compiler "^2.6.11"
 
-"@graphql-tools/import@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/import/-/import-6.0.14.tgz#697d3fe1a20f6ccbd097029e500d7df34d75c0e2"
-  integrity sha1-aX0/4aIPbMvQlwKeUA198011wOI=
+"@graphql-tools/import@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/import/-/import-6.0.15.tgz#d6a9d3b6199a1e07d80d8021635d317b2c190c6f"
+  integrity sha1-1qnTthmaHgfYDYAhY10xeywZDG8=
   dependencies:
     fs-extra "9.0.1"
     resolve-from "5.0.0"
 
-"@graphql-tools/json-file-loader@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/json-file-loader/-/json-file-loader-6.0.14.tgz#8a4d22491556ef4620a8cfc2b794749d8c449a88"
-  integrity sha1-ik0iSRVW70YgqM/Ct5R0nYxEmog=
+"@graphql-tools/json-file-loader@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/json-file-loader/-/json-file-loader-6.0.15.tgz#e341a5fed1ef3af8f8bfde17ed9a14e1a6df36c0"
+  integrity sha1-40Gl/tHvOvj4v94X7ZoU4abfNsA=
   dependencies:
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/utils" "6.0.15"
     fs-extra "9.0.1"
     tslib "~2.0.0"
 
-"@graphql-tools/links@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/links/-/links-6.0.14.tgz#4f2b4a0b722dc288483e41eb12a8cdd9d6ba7ace"
-  integrity sha1-TytKC3ItwohIPkHrEqjN2da6es4=
+"@graphql-tools/links@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/links/-/links-6.0.15.tgz#21b39e7ad5c1d89734ccb2e2683736cc88514fba"
+  integrity sha1-IbOeetXB2Jc0zLLiaDc2zIhRT7o=
   dependencies:
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/utils" "6.0.15"
     apollo-link "1.2.14"
-    apollo-upload-client "13.0.0"
+    apollo-upload-client "14.0.1"
     cross-fetch "3.0.5"
     form-data "3.0.0"
     tslib "~2.0.0"
 
-"@graphql-tools/load-files@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/load-files/-/load-files-6.0.14.tgz#38eda42b42719929a0e91ffda0064755cd0e7417"
-  integrity sha1-OO2kK0JxmSmg6R/9oAZHVc0OdBc=
+"@graphql-tools/load-files@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/load-files/-/load-files-6.0.15.tgz#2e8ae233817bd6aee4145e1a6fce76d95f80ca78"
+  integrity sha1-LoriM4F71q7kFF4ab8522V+Ayng=
   dependencies:
     fs-extra "9.0.1"
     globby "11.0.1"
     unixify "1.0.0"
 
-"@graphql-tools/load@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/load/-/load-6.0.14.tgz#c26e1a1d20a6b02815eceadc0484758aff1188f2"
-  integrity sha1-wm4aHSCmsCgV7OrcBIR1iv8RiPI=
+"@graphql-tools/load@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/load/-/load-6.0.15.tgz#f2012b8938b3a535dbafefbb719997684028f30f"
+  integrity sha1-8gEriTizpTXbr++7cZmXaEAo8w8=
   dependencies:
-    "@graphql-tools/merge" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/merge" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
     globby "11.0.1"
     import-from "3.0.0"
     is-glob "4.0.1"
@@ -1661,46 +1668,46 @@
     "@graphql-tools/utils" "6.0.12"
     tslib "~2.0.0"
 
-"@graphql-tools/merge@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/merge/-/merge-6.0.14.tgz#6ea3148b5d7261e6eeb05ca034f86ebac42b2bea"
-  integrity sha1-bqMUi11yYebusFygNPhuusQrK+o=
+"@graphql-tools/merge@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/merge/-/merge-6.0.15.tgz#09c84bd08971edfb3e1035d71432b47687820bdc"
+  integrity sha1-CchL0Ilx7fs+EDXXFDK0doeCC9w=
   dependencies:
-    "@graphql-tools/schema" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/schema" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
     tslib "~2.0.0"
 
-"@graphql-tools/mock@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/mock/-/mock-6.0.14.tgz#9dfd2539a55953796d74e81645840c65dd6ed79e"
-  integrity sha1-nf0lOaVZU3ltdOgWRYQMZd1u154=
+"@graphql-tools/mock@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/mock/-/mock-6.0.15.tgz#253a0d82ab9411fbfc8409c577f9fe3c72f6854e"
+  integrity sha1-JToNgquUEfv8hAnFd/n+PHL2hU4=
   dependencies:
-    "@graphql-tools/schema" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/schema" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
     tslib "~2.0.0"
 
-"@graphql-tools/module-loader@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/module-loader/-/module-loader-6.0.14.tgz#f350e294475d92dded92b623b87c5bff6bde6d5b"
-  integrity sha1-81DilEddkt3tkrYjuHxb/2vebVs=
+"@graphql-tools/module-loader@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/module-loader/-/module-loader-6.0.15.tgz#2c408dc73018a595d1300dfed83a1db520777685"
+  integrity sha1-LECNxzAYpZXRMA3+2DodtSB3doU=
   dependencies:
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/utils" "6.0.15"
     tslib "~2.0.0"
 
-"@graphql-tools/relay-operation-optimizer@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/relay-operation-optimizer/-/relay-operation-optimizer-6.0.14.tgz#3cb4e9e646e70b1c6e80b51be50fbfac898a631f"
-  integrity sha1-PLTp5kbnCxxugLUb5Q+/rImKYx8=
+"@graphql-tools/relay-operation-optimizer@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/relay-operation-optimizer/-/relay-operation-optimizer-6.0.15.tgz#f991499c54945cb8fa2396bb5292252fbda0a773"
+  integrity sha1-+ZFJnFSUXLj6I5a7UpIlL72gp3M=
   dependencies:
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/utils" "6.0.15"
     relay-compiler "10.0.0"
 
-"@graphql-tools/resolvers-composition@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/resolvers-composition/-/resolvers-composition-6.0.14.tgz#c5784fb0fc1036c8765f8d555aa87ef869b15bf2"
-  integrity sha1-xXhPsPwQNsh2X41VWqh++GmxW/I=
+"@graphql-tools/resolvers-composition@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/resolvers-composition/-/resolvers-composition-6.0.15.tgz#8d1228c3598b595099ba7be1ba66c3d827dbc7f1"
+  integrity sha1-jRIow1mLWVCZunvhumbD2Cfbx/E=
   dependencies:
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/utils" "6.0.15"
     lodash "4.17.19"
 
 "@graphql-tools/schema@6.0.12":
@@ -1711,35 +1718,35 @@
     "@graphql-tools/utils" "6.0.12"
     tslib "~2.0.0"
 
-"@graphql-tools/schema@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/schema/-/schema-6.0.14.tgz#f095e2c90f66d21a248b60c4bd32cb367d6722cc"
-  integrity sha1-8JXiyQ9m0hoki2DEvTLLNn1nIsw=
+"@graphql-tools/schema@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/schema/-/schema-6.0.15.tgz#b016f9f36820342982887a291baa7e7d11b039ae"
+  integrity sha1-sBb582ggNCmCiHopG6p+fRGwOa4=
   dependencies:
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/utils" "6.0.15"
     tslib "~2.0.0"
 
-"@graphql-tools/stitch@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/stitch/-/stitch-6.0.14.tgz#6f424acbd48780e384f8a3d80a417aa441552655"
-  integrity sha1-b0JKy9SHgOOE+KPYCkF6pEFVJlU=
+"@graphql-tools/stitch@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/stitch/-/stitch-6.0.15.tgz#aa0c7718d970bea2586930fd05eced178f3e4d68"
+  integrity sha1-qgx3GNlwvqJYaTD9BeztF48+TWg=
   dependencies:
-    "@graphql-tools/batch-delegate" "6.0.14"
-    "@graphql-tools/delegate" "6.0.14"
-    "@graphql-tools/merge" "6.0.14"
-    "@graphql-tools/schema" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
-    "@graphql-tools/wrap" "6.0.14"
+    "@graphql-tools/batch-delegate" "6.0.15"
+    "@graphql-tools/delegate" "6.0.15"
+    "@graphql-tools/merge" "6.0.15"
+    "@graphql-tools/schema" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
+    "@graphql-tools/wrap" "6.0.15"
     tslib "~2.0.0"
 
-"@graphql-tools/url-loader@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/url-loader/-/url-loader-6.0.14.tgz#da6e9fa7ed89d7c75dbf7d44cd93f88ebf95af1c"
-  integrity sha1-2m6fp+2J18ddv31EzZP4jr+Vrxw=
+"@graphql-tools/url-loader@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/url-loader/-/url-loader-6.0.15.tgz#3ad621ed75c03fbc0ea08d2560f379a053c4035f"
+  integrity sha1-OtYh7XXAP7wOoI0lYPN5oFPEA18=
   dependencies:
-    "@graphql-tools/delegate" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
-    "@graphql-tools/wrap" "6.0.14"
+    "@graphql-tools/delegate" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
+    "@graphql-tools/wrap" "6.0.15"
     "@types/websocket" "1.0.1"
     cross-fetch "3.0.5"
     subscriptions-transport-ws "0.9.17"
@@ -1755,22 +1762,22 @@
     "@ardatan/aggregate-error" "0.0.1"
     camel-case "4.1.1"
 
-"@graphql-tools/utils@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/utils/-/utils-6.0.14.tgz#20f90dee8e898acc0a46e62bbd53af01ac1f102e"
-  integrity sha1-IPkN7o6JiswKRuYrvVOvAawfEC4=
+"@graphql-tools/utils@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/utils/-/utils-6.0.15.tgz#6d54d383285bea3c22797531933b62a408e78e49"
+  integrity sha1-bVTTgyhb6jwieXUxkztipAjnjkk=
   dependencies:
     "@ardatan/aggregate-error" "0.0.1"
     camel-case "4.1.1"
 
-"@graphql-tools/wrap@6.0.14":
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/wrap/-/wrap-6.0.14.tgz#d843be41c9fd8350f2c5e8d24c488a5ae999f176"
-  integrity sha1-2EO+Qcn9g1DyxejSTEiKWumZ8XY=
+"@graphql-tools/wrap@6.0.15":
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@graphql-tools/wrap/-/wrap-6.0.15.tgz#1b4a43d406f3894e4cbc931f9d4e0d282ab0076e"
+  integrity sha1-G0pD1AbziU5MvJMfnU4NKCqwB24=
   dependencies:
-    "@graphql-tools/delegate" "6.0.14"
-    "@graphql-tools/schema" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
+    "@graphql-tools/delegate" "6.0.15"
+    "@graphql-tools/schema" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
     aggregate-error "3.0.1"
     tslib "~2.0.0"
 
@@ -1790,165 +1797,163 @@
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha1-JlIL8Jq+SlZEzVQU43ElqJVCQd0=
 
-"@jest/console@^25.5.0":
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/console/-/console-25.5.0.tgz#770800799d510f37329c508a9edd0b7b447d9abb"
-  integrity sha1-dwgAeZ1RDzcynFCKnt0Le0R9mrs=
+"@jest/console@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/console/-/console-26.1.0.tgz#f67c89e4f4d04dbcf7b052aed5ab9c74f915b954"
+  integrity sha1-9nyJ5PTQTbz3sFKu1aucdPkVuVQ=
   dependencies:
-    "@jest/types" "^25.5.0"
-    chalk "^3.0.0"
-    jest-message-util "^25.5.0"
-    jest-util "^25.5.0"
+    "@jest/types" "^26.1.0"
+    chalk "^4.0.0"
+    jest-message-util "^26.1.0"
+    jest-util "^26.1.0"
     slash "^3.0.0"
 
-"@jest/core@^25.2.3", "@jest/core@^25.5.4":
-  version "25.5.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/core/-/core-25.5.4.tgz#3ef7412f7339210f003cdf36646bbca786efe7b4"
-  integrity sha1-PvdBL3M5IQ8APN82ZGu8p4bv57Q=
+"@jest/core@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/core/-/core-26.1.0.tgz#4580555b522de412a7998b3938c851e4f9da1c18"
+  integrity sha1-RYBVW1It5BKnmYs5OMhR5PnaHBg=
   dependencies:
-    "@jest/console" "^25.5.0"
-    "@jest/reporters" "^25.5.1"
-    "@jest/test-result" "^25.5.0"
-    "@jest/transform" "^25.5.1"
-    "@jest/types" "^25.5.0"
+    "@jest/console" "^26.1.0"
+    "@jest/reporters" "^26.1.0"
+    "@jest/test-result" "^26.1.0"
+    "@jest/transform" "^26.1.0"
+    "@jest/types" "^26.1.0"
     ansi-escapes "^4.2.1"
-    chalk "^3.0.0"
+    chalk "^4.0.0"
     exit "^0.1.2"
     graceful-fs "^4.2.4"
-    jest-changed-files "^25.5.0"
-    jest-config "^25.5.4"
-    jest-haste-map "^25.5.1"
-    jest-message-util "^25.5.0"
-    jest-regex-util "^25.2.6"
-    jest-resolve "^25.5.1"
-    jest-resolve-dependencies "^25.5.4"
-    jest-runner "^25.5.4"
-    jest-runtime "^25.5.4"
-    jest-snapshot "^25.5.1"
-    jest-util "^25.5.0"
-    jest-validate "^25.5.0"
-    jest-watcher "^25.5.0"
+    jest-changed-files "^26.1.0"
+    jest-config "^26.1.0"
+    jest-haste-map "^26.1.0"
+    jest-message-util "^26.1.0"
+    jest-regex-util "^26.0.0"
+    jest-resolve "^26.1.0"
+    jest-resolve-dependencies "^26.1.0"
+    jest-runner "^26.1.0"
+    jest-runtime "^26.1.0"
+    jest-snapshot "^26.1.0"
+    jest-util "^26.1.0"
+    jest-validate "^26.1.0"
+    jest-watcher "^26.1.0"
     micromatch "^4.0.2"
     p-each-series "^2.1.0"
-    realpath-native "^2.0.0"
     rimraf "^3.0.0"
     slash "^3.0.0"
     strip-ansi "^6.0.0"
 
-"@jest/environment@^25.5.0":
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/environment/-/environment-25.5.0.tgz#aa33b0c21a716c65686638e7ef816c0e3a0c7b37"
-  integrity sha1-qjOwwhpxbGVoZjjn74FsDjoMezc=
+"@jest/environment@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/environment/-/environment-26.1.0.tgz#378853bcdd1c2443b4555ab908cfbabb851e96da"
+  integrity sha1-N4hTvN0cJEO0VVq5CM+6u4Uelto=
   dependencies:
-    "@jest/fake-timers" "^25.5.0"
-    "@jest/types" "^25.5.0"
-    jest-mock "^25.5.0"
+    "@jest/fake-timers" "^26.1.0"
+    "@jest/types" "^26.1.0"
+    jest-mock "^26.1.0"
 
-"@jest/fake-timers@^25.5.0":
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/fake-timers/-/fake-timers-25.5.0.tgz#46352e00533c024c90c2bc2ad9f2959f7f114185"
-  integrity sha1-RjUuAFM8AkyQwrwq2fKVn38RQYU=
+"@jest/fake-timers@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/fake-timers/-/fake-timers-26.1.0.tgz#9a76b7a94c351cdbc0ad53e5a748789f819a65fe"
+  integrity sha1-mna3qUw1HNvArVPlp0h4n4GaZf4=
   dependencies:
-    "@jest/types" "^25.5.0"
-    jest-message-util "^25.5.0"
-    jest-mock "^25.5.0"
-    jest-util "^25.5.0"
-    lolex "^5.0.0"
+    "@jest/types" "^26.1.0"
+    "@sinonjs/fake-timers" "^6.0.1"
+    jest-message-util "^26.1.0"
+    jest-mock "^26.1.0"
+    jest-util "^26.1.0"
 
-"@jest/globals@^25.5.2":
-  version "25.5.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/globals/-/globals-25.5.2.tgz#5e45e9de8d228716af3257eeb3991cc2e162ca88"
-  integrity sha1-XkXp3o0ihxavMlfus5kcwuFiyog=
+"@jest/globals@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/globals/-/globals-26.1.0.tgz#6cc5d7cbb79b76b120f2403d7d755693cf063ab1"
+  integrity sha1-bMXXy7ebdrEg8kA9fXVWk88GOrE=
   dependencies:
-    "@jest/environment" "^25.5.0"
-    "@jest/types" "^25.5.0"
-    expect "^25.5.0"
+    "@jest/environment" "^26.1.0"
+    "@jest/types" "^26.1.0"
+    expect "^26.1.0"
 
-"@jest/reporters@^25.5.1":
-  version "25.5.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/reporters/-/reporters-25.5.1.tgz#cb686bcc680f664c2dbaf7ed873e93aa6811538b"
-  integrity sha1-y2hrzGgPZkwtuvfthz6TqmgRU4s=
+"@jest/reporters@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/reporters/-/reporters-26.1.0.tgz#08952e90c90282e14ff49e927bdf1873617dae78"
+  integrity sha1-CJUukMkCguFP9J6Se98Yc2F9rng=
   dependencies:
     "@bcoe/v8-coverage" "^0.2.3"
-    "@jest/console" "^25.5.0"
-    "@jest/test-result" "^25.5.0"
-    "@jest/transform" "^25.5.1"
-    "@jest/types" "^25.5.0"
-    chalk "^3.0.0"
+    "@jest/console" "^26.1.0"
+    "@jest/test-result" "^26.1.0"
+    "@jest/transform" "^26.1.0"
+    "@jest/types" "^26.1.0"
+    chalk "^4.0.0"
     collect-v8-coverage "^1.0.0"
     exit "^0.1.2"
     glob "^7.1.2"
     graceful-fs "^4.2.4"
     istanbul-lib-coverage "^3.0.0"
-    istanbul-lib-instrument "^4.0.0"
+    istanbul-lib-instrument "^4.0.3"
     istanbul-lib-report "^3.0.0"
     istanbul-lib-source-maps "^4.0.0"
     istanbul-reports "^3.0.2"
-    jest-haste-map "^25.5.1"
-    jest-resolve "^25.5.1"
-    jest-util "^25.5.0"
-    jest-worker "^25.5.0"
+    jest-haste-map "^26.1.0"
+    jest-resolve "^26.1.0"
+    jest-util "^26.1.0"
+    jest-worker "^26.1.0"
     slash "^3.0.0"
     source-map "^0.6.0"
-    string-length "^3.1.0"
+    string-length "^4.0.1"
     terminal-link "^2.0.0"
     v8-to-istanbul "^4.1.3"
   optionalDependencies:
-    node-notifier "^6.0.0"
+    node-notifier "^7.0.0"
 
-"@jest/source-map@^25.5.0":
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/source-map/-/source-map-25.5.0.tgz#df5c20d6050aa292c2c6d3f0d2c7606af315bd1b"
-  integrity sha1-31wg1gUKopLCxtPw0sdgavMVvRs=
+"@jest/source-map@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/source-map/-/source-map-26.1.0.tgz#a6a020d00e7d9478f4b690167c5e8b77e63adb26"
+  integrity sha1-pqAg0A59lHj0tpAWfF6Ld+Y62yY=
   dependencies:
     callsites "^3.0.0"
     graceful-fs "^4.2.4"
     source-map "^0.6.0"
 
-"@jest/test-result@^25.5.0":
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/test-result/-/test-result-25.5.0.tgz#139a043230cdeffe9ba2d8341b27f2efc77ce87c"
-  integrity sha1-E5oEMjDN7/6botg0Gyfy78d86Hw=
+"@jest/test-result@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/test-result/-/test-result-26.1.0.tgz#a93fa15b21ad3c7ceb21c2b4c35be2e407d8e971"
+  integrity sha1-qT+hWyGtPHzrIcK0w1vi5AfY6XE=
   dependencies:
-    "@jest/console" "^25.5.0"
-    "@jest/types" "^25.5.0"
+    "@jest/console" "^26.1.0"
+    "@jest/types" "^26.1.0"
     "@types/istanbul-lib-coverage" "^2.0.0"
     collect-v8-coverage "^1.0.0"
 
-"@jest/test-sequencer@^25.5.4":
-  version "25.5.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/test-sequencer/-/test-sequencer-25.5.4.tgz#9b4e685b36954c38d0f052e596d28161bdc8b737"
-  integrity sha1-m05oWzaVTDjQ8FLlltKBYb3Itzc=
+"@jest/test-sequencer@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/test-sequencer/-/test-sequencer-26.1.0.tgz#41a6fc8b850c3f33f48288ea9ea517c047e7f14e"
+  integrity sha1-Qab8i4UMPzP0gojqnqUXwEfn8U4=
   dependencies:
-    "@jest/test-result" "^25.5.0"
+    "@jest/test-result" "^26.1.0"
     graceful-fs "^4.2.4"
-    jest-haste-map "^25.5.1"
-    jest-runner "^25.5.4"
-    jest-runtime "^25.5.4"
+    jest-haste-map "^26.1.0"
+    jest-runner "^26.1.0"
+    jest-runtime "^26.1.0"
 
-"@jest/transform@^25.1.0", "@jest/transform@^25.5.1":
-  version "25.5.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/transform/-/transform-25.5.1.tgz#0469ddc17699dd2bf985db55fa0fb9309f5c2db3"
-  integrity sha1-BGndwXaZ3Sv5hdtV+g+5MJ9cLbM=
+"@jest/transform@^26.1.0":
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/transform/-/transform-26.1.0.tgz#697f48898c2a2787c9b4cb71d09d7e617464e509"
+  integrity sha1-aX9IiYwqJ4fJtMtx0J1+YXRk5Qk=
   dependencies:
     "@babel/core" "^7.1.0"
-    "@jest/types" "^25.5.0"
+    "@jest/types" "^26.1.0"
     babel-plugin-istanbul "^6.0.0"
-    chalk "^3.0.0"
+    chalk "^4.0.0"
     convert-source-map "^1.4.0"
     fast-json-stable-stringify "^2.0.0"
     graceful-fs "^4.2.4"
-    jest-haste-map "^25.5.1"
-    jest-regex-util "^25.2.6"
-    jest-util "^25.5.0"
+    jest-haste-map "^26.1.0"
+    jest-regex-util "^26.0.0"
+    jest-util "^26.1.0"
     micromatch "^4.0.2"
     pirates "^4.0.1"
-    realpath-native "^2.0.0"
     slash "^3.0.0"
     source-map "^0.6.1"
     write-file-atomic "^3.0.0"
 
-"@jest/types@^25.1.0", "@jest/types@^25.5.0":
+"@jest/types@^25.5.0":
   version "25.5.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@jest/types/-/types-25.5.0.tgz#4d6a4793f7b9599fc3680877b856a97dbccf2a9d"
   integrity sha1-TWpHk/e5WZ/DaAh3uFapfbzPKp0=
@@ -1968,19 +1973,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@kwsites/file-exists@^1.1.1":
-  version "1.1.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@kwsites/file-exists/-/file-exists-1.1.1.tgz#ad1efcac13e1987d8dbaf235ef3be5b0d96faa99"
-  integrity sha1-rR78rBPhmH2NuvI17zvlsNlvqpk=
-  dependencies:
-    debug "^4.1.1"
-
-"@kwsites/promise-deferred@^1.0.1":
-  version "1.1.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@kwsites/promise-deferred/-/promise-deferred-1.1.1.tgz#8ace5259254426ccef57f3175bc64ed7095ed919"
-  integrity sha1-is5SWSVEJszvV/MXW8ZO1wle2Rk=
-
-"@nestjs/common@^7.0.0":
+"@nestjs/common@^7.3.2":
   version "7.3.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nestjs/common/-/common-7.3.2.tgz#ce9e63085cf74948f00a167c4b55243c288b5eaa"
   integrity sha1-zp5jCFz3SUjwChZ8S1UkPCiLXqo=
@@ -1991,7 +1984,7 @@
     tslib "2.0.0"
     uuid "8.2.0"
 
-"@nestjs/core@^7.0.0":
+"@nestjs/core@^7.3.2":
   version "7.3.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nestjs/core/-/core-7.3.2.tgz#64b4eebcfcf7beb909504b1a74fc89fc6ecc7e26"
   integrity sha1-ZLTuvPz3vrkJUEsadPyJ/G7MfiY=
@@ -2028,7 +2021,7 @@
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nestjs/mapped-types/-/mapped-types-0.0.5.tgz#0c3462de4125eea0e85e3a520f0de4e7e8dcfa40"
   integrity sha1-DDRi3kEl7qDoXjpSDw3k5+jc+kA=
 
-"@nestjs/platform-express@^7.0.0":
+"@nestjs/platform-express@^7.3.2":
   version "7.3.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nestjs/platform-express/-/platform-express-7.3.2.tgz#82175751e2d776e854efe48316efa0564bb36352"
   integrity sha1-ghdXUeLXduhU7+SDFu+gVkuzY1I=
@@ -2039,7 +2032,7 @@
     multer "1.4.2"
     tslib "2.0.0"
 
-"@nestjs/schematics@^7.0.0":
+"@nestjs/schematics@^7.0.0", "@nestjs/schematics@^7.0.1":
   version "7.0.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nestjs/schematics/-/schematics-7.0.1.tgz#bb729d06223d8b4df1a65e94d8fac17ef1b45657"
   integrity sha1-u3KdBiI9i03xpl6U2PrBfvG0Vlc=
@@ -2048,7 +2041,7 @@
     "@angular-devkit/schematics" "9.1.7"
     fs-extra "9.0.0"
 
-"@nestjs/testing@^7.0.0":
+"@nestjs/testing@^7.3.2":
   version "7.3.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nestjs/testing/-/testing-7.3.2.tgz#5ee7c9fad7efac0cf92e8bf328628edfd906fa1f"
   integrity sha1-XufJ+tfvrAz5LovzKGKO39kG+h8=
@@ -2138,21 +2131,21 @@
     node-gyp "^6.1.0"
     read-package-json-fast "^1.1.3"
 
-"@nrwl/cli@10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/cli/-/cli-10.0.1.tgz#6ad0af34adef2b592800641a8e2814a188527e15"
-  integrity sha1-atCvNK3vK1koAGQajigUoYhSfhU=
+"@nrwl/cli@10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/cli/-/cli-10.0.3.tgz#697ab237c874f5975e20307b1f2a3f03bf90e6bf"
+  integrity sha1-aXqyN8h09ZdeIDB7Hyo/A7+Q5r8=
   dependencies:
-    "@nrwl/tao" "10.0.1"
+    "@nrwl/tao" "10.0.3"
     chalk "2.4.2"
     tmp "0.0.33"
     yargs "^11.0.0"
     yargs-parser "10.0.0"
 
-"@nrwl/cypress@10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/cypress/-/cypress-10.0.1.tgz#9a93b7d92002a3ce95097d9a5ba55decd6af6e9f"
-  integrity sha1-mpO32SACo86VCX2aW6Vd7Navbp8=
+"@nrwl/cypress@10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/cypress/-/cypress-10.0.3.tgz#da545a0e3e89c0be064bd7b6421ed47576f33b1f"
+  integrity sha1-2lRaDj6JwL4GS9e2Qh7UdXbzOx8=
   dependencies:
     "@angular-devkit/architect" "~0.1000.0"
     "@angular-devkit/core" "~10.0.0"
@@ -2163,50 +2156,50 @@
     tsconfig-paths-webpack-plugin "3.2.0"
     webpack-node-externals "1.7.2"
 
-"@nrwl/eslint-plugin-nx@10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-10.0.1.tgz#3cbdce7528e2b87e471c3f87d20ef75a32288952"
-  integrity sha1-PL3OdSjiuH5HHD+H0g73WjIoiVI=
+"@nrwl/eslint-plugin-nx@10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-10.0.3.tgz#a56d7c2c7088b1d7c07312404eefbed51cdbd6e7"
+  integrity sha1-pW18LHCIsdfAcxJATu++1Rzb1uc=
   dependencies:
     "@typescript-eslint/experimental-utils" "^2.19.2"
 
-"@nrwl/jest@10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/jest/-/jest-10.0.1.tgz#b94f8a921f3873fb4ebf1deb447b56ad7ebaf5bf"
-  integrity sha1-uU+Kkh84c/tOvx3rRHtWrX669b8=
+"@nrwl/jest@10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/jest/-/jest-10.0.3.tgz#57ecaeb911603d323de41b05692da3d0a2abc332"
+  integrity sha1-V+yuuRFgPTI95BsFaS2j0KKrwzI=
   dependencies:
     "@angular-devkit/architect" "~0.1000.0"
     "@angular-devkit/core" "~10.0.0"
     "@angular-devkit/schematics" "~10.0.0"
 
-"@nrwl/linter@10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/linter/-/linter-10.0.1.tgz#a7f98e5ca5aed7c4dfa16aa8dceb28c2b21bb71f"
-  integrity sha1-p/mOXKWu18TfoWqo3OsowrIbtx8=
+"@nrwl/linter@10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/linter/-/linter-10.0.3.tgz#eb9af7ea964aa128077430137389f6734eb69b54"
+  integrity sha1-65r36pZKoSgHdDATc4n2c062m1Q=
   dependencies:
     "@angular-devkit/architect" "~0.1000.0"
 
-"@nrwl/nest@^10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/nest/-/nest-10.0.1.tgz#3a9323cf27f82205e4f76da8ad05dd6ec32b35df"
-  integrity sha1-OpMjzyf4IgXk922orQXdbsMrNd8=
+"@nrwl/nest@^10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/nest/-/nest-10.0.3.tgz#9c5e93446a4aefd5c22f75b8be18bebc775dd4b6"
+  integrity sha1-nF6TRGpK79XCL3W4vhi+vHdd1LY=
   dependencies:
     "@angular-devkit/schematics" "~10.0.0"
     "@nestjs/schematics" "^7.0.0"
-    "@nrwl/jest" "10.0.1"
-    "@nrwl/node" "10.0.1"
+    "@nrwl/jest" "10.0.3"
+    "@nrwl/node" "10.0.3"
 
-"@nrwl/node@10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/node/-/node-10.0.1.tgz#f13aedd53f8d7b632da4e64d05974f83c08b632d"
-  integrity sha1-8Trt1T+Ne2MtpOZNBZdPg8CLYy0=
+"@nrwl/node@10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/node/-/node-10.0.3.tgz#49c362a6bd322c8fade0f6414a1b8183c37614df"
+  integrity sha1-ScNipr0yLI+t4PZBShuBg8N2FN8=
   dependencies:
     "@angular-devkit/architect" "~0.1000.0"
     "@angular-devkit/build-webpack" "~0.1000.0"
     "@angular-devkit/core" "~10.0.0"
     "@angular-devkit/schematics" "~10.0.0"
-    "@nrwl/jest" "10.0.1"
-    "@nrwl/linter" "10.0.1"
+    "@nrwl/jest" "10.0.3"
+    "@nrwl/linter" "10.0.3"
     circular-dependency-plugin "5.2.0"
     copy-webpack-plugin "5.1.1"
     fork-ts-checker-webpack-plugin "^3.1.1"
@@ -2220,17 +2213,17 @@
     webpack-merge "4.2.1"
     webpack-node-externals "1.7.2"
 
-"@nrwl/react@^10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/react/-/react-10.0.1.tgz#a47a6042f696ad02e048921ac25df0cbe1d4ded5"
-  integrity sha1-pHpgQvaWrQLgSJIawl3wy+HU3tU=
+"@nrwl/react@^10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/react/-/react-10.0.3.tgz#f4b9195e5230c0bf797c70d9bb5f08300eb13a37"
+  integrity sha1-9LkZXlIwwL95fHDZu18IMA6xOjc=
   dependencies:
     "@angular-devkit/schematics" "~10.0.0"
     "@babel/core" "7.9.6"
     "@babel/preset-react" "7.9.4"
-    "@nrwl/cypress" "10.0.1"
-    "@nrwl/jest" "10.0.1"
-    "@nrwl/web" "10.0.1"
+    "@nrwl/cypress" "10.0.3"
+    "@nrwl/jest" "10.0.3"
+    "@nrwl/web" "10.0.3"
     "@svgr/webpack" "^5.2.0"
     confusing-browser-globals "^1.0.9"
     eslint-plugin-import "^2.20.1"
@@ -2239,10 +2232,10 @@
     eslint-plugin-react-hooks "^2.4.0"
     url-loader "^3.0.0"
 
-"@nrwl/tao@10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/tao/-/tao-10.0.1.tgz#9c87eef0714ab1f1b7db83a01732bcf3fef9350e"
-  integrity sha1-nIfu8HFKsfG324OgFzK88/75NQ4=
+"@nrwl/tao@10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/tao/-/tao-10.0.3.tgz#606f6f8c684b63a388535cbcfc10f98e8abd3e82"
+  integrity sha1-YG9vjGhLY6OIU1y8/BD5joq9PoI=
   dependencies:
     "@angular-devkit/architect" "~0.1000.0"
     "@angular-devkit/core" "~10.0.0"
@@ -2251,10 +2244,10 @@
     minimist "^1.2.0"
     strip-json-comments "2.0.1"
 
-"@nrwl/web@10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/web/-/web-10.0.1.tgz#4db78a07e3db63427afe7d5d4ff5b260ea33afc4"
-  integrity sha1-TbeKB+PbY0J6/n1dT/WyYOozr8Q=
+"@nrwl/web@10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/web/-/web-10.0.3.tgz#a45eb931b97ecd533eabb36cadc4899db8a2957a"
+  integrity sha1-pF65Mbl+zVM+q7NsrcSJnbiilXo=
   dependencies:
     "@angular-devkit/architect" "~0.1000.0"
     "@angular-devkit/build-optimizer" "~0.1000.0"
@@ -2267,9 +2260,9 @@
     "@babel/plugin-transform-regenerator" "7.8.7"
     "@babel/preset-env" "7.9.6"
     "@babel/preset-typescript" "7.9.0"
-    "@nrwl/cypress" "10.0.1"
-    "@nrwl/jest" "10.0.1"
-    "@nrwl/linter" "10.0.1"
+    "@nrwl/cypress" "10.0.3"
+    "@nrwl/jest" "10.0.3"
+    "@nrwl/linter" "10.0.3"
     "@rollup/plugin-babel" "5.0.2"
     "@rollup/plugin-commonjs" "11.0.2"
     "@rollup/plugin-image" "2.0.4"
@@ -2340,14 +2333,14 @@
     webpack-subresource-integrity "1.1.0-rc.5"
     worker-plugin "3.2.0"
 
-"@nrwl/workspace@10.0.1":
-  version "10.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/workspace/-/workspace-10.0.1.tgz#ea109520065c90f7c4f591ae2abf8f49a37c2064"
-  integrity sha1-6hCVIAZckPfE9ZGuKr+PSaN8IGQ=
+"@nrwl/workspace@10.0.3":
+  version "10.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@nrwl/workspace/-/workspace-10.0.3.tgz#ca712803efc055744f98ad7bb413b1be78f6bc8b"
+  integrity sha1-ynEoA+/AVXRPmK17tBOxvnj2vIs=
   dependencies:
     "@angular-devkit/core" "~10.0.0"
     "@angular-devkit/schematics" "~10.0.0"
-    "@nrwl/cli" "10.0.1"
+    "@nrwl/cli" "10.0.3"
     axios "0.19.2"
     chalk "2.4.2"
     cosmiconfig "4.0.0"
@@ -2358,6 +2351,7 @@
     opn "^5.3.0"
     rxjs "^6.5.4"
     semver "5.4.1"
+    speakingurl "14.0.1"
     strip-json-comments "2.0.1"
     tmp "0.0.33"
     yargs "^11.0.0"
@@ -2648,6 +2642,13 @@
   dependencies:
     type-detect "4.0.8"
 
+"@sinonjs/fake-timers@^6.0.1":
+  version "6.0.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@sinonjs/fake-timers/-/fake-timers-6.0.1.tgz#293674fccb3262ac782c7aadfdeca86b10c75c40"
+  integrity sha1-KTZ0/MsyYqx4LHqt/eyoaxDHXEA=
+  dependencies:
+    "@sinonjs/commons" "^1.7.0"
+
 "@svgr/babel-plugin-add-jsx-attribute@^5.4.0":
   version "5.4.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-5.4.0.tgz#81ef61947bb268eb9d50523446f9c638fb355906"
@@ -2815,7 +2816,7 @@
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/aria-query/-/aria-query-4.2.0.tgz#14264692a9d6e2fa4db3df5e56e94b5e25647ac0"
   integrity sha1-FCZGkqnW4vpNs99eVulLXiVkesA=
 
-"@types/babel__core@^7.1.0", "@types/babel__core@^7.1.7":
+"@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.9"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/babel__core/-/babel__core-7.1.9.tgz#77e59d438522a6fb898fa43dc3455c6e72f3963d"
   integrity sha1-d+WdQ4UipvuJj6Q9w0VcbnLzlj0=
@@ -3015,21 +3016,13 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@*":
+"@types/jest@*", "@types/jest@26.0.5":
   version "26.0.5"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/jest/-/jest-26.0.5.tgz#23a8eecf4764a770ea8d3a0d1ea16b96c822035d"
   integrity sha1-I6juz0dkp3DqjToNHqFrlsgiA10=
   dependencies:
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
-
-"@types/jest@25.1.4":
-  version "25.1.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/jest/-/jest-25.1.4.tgz#9e9f1e59dda86d3fd56afce71d1ea1b331f6f760"
-  integrity sha1-np8eWd2obT/VavznHR6hszH292A=
-  dependencies:
-    jest-diff "^25.1.0"
-    pretty-format "^25.1.0"
 
 "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.4":
   version "7.0.5"
@@ -3096,7 +3089,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@>=6":
+"@types/node@*", "@types/node@>=6", "@types/node@~14.0.24":
   version "14.0.24"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/node/-/node-14.0.24.tgz#b0f86f58564fa02a28b68f8b55d4cdec42e3b9d6"
   integrity sha1-sPhvWFZPoCooto+LVdTN7ELjudY=
@@ -3105,11 +3098,6 @@
   version "10.17.27"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/node/-/node-10.17.27.tgz#391cb391c75646c8ad2a7b6ed3bbcee52d1bdf19"
   integrity sha1-ORyzkcdWRsitKntu07vO5S0b3xk=
-
-"@types/node@~8.9.4":
-  version "8.9.5"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/node/-/node-8.9.5.tgz#162b864bc70be077e6db212b322754917929e976"
-  integrity sha1-FiuGS8cL4Hfm2yErMidUkXkp6XY=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -3121,10 +3109,10 @@
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=
 
-"@types/prettier@^1.19.0":
-  version "1.19.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/prettier/-/prettier-1.19.1.tgz#33509849f8e679e4add158959fdb086440e9553f"
-  integrity sha1-M1CYSfjmeeSt0ViVn9sIZEDpVT8=
+"@types/prettier@^2.0.0":
+  version "2.0.2"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/prettier/-/prettier-2.0.2.tgz#5bb52ee68d0f8efa9cc0099920e56be6cc4e37f3"
+  integrity sha1-W7Uu5o0PjvqcwAmZIOVr5sxON/M=
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -3170,18 +3158,10 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@16.9.43":
   version "16.9.43"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/react/-/react-16.9.43.tgz#c287f23f6189666ee3bebc2eb8d0f84bcb6cdb6b"
   integrity sha1-wofyP2GJZm7jvrwuuND4S8ts22s=
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^2.2.0"
-
-"@types/react@16.9.38":
-  version "16.9.38"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/react/-/react-16.9.38.tgz#868405dace93a4095d3e054f4c4a1de7a1ac0680"
-  integrity sha1-hoQF2s6TpAldPgVPTEod56GsBoA=
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -3288,25 +3268,28 @@
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
   integrity sha1-i2OrfxqlMhJIqtWsiQpIVlbc6k0=
 
-"@typescript-eslint/eslint-plugin@2.19.2":
-  version "2.19.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.19.2.tgz#e279aaae5d5c1f2547b4cff99204e1250bc7a058"
-  integrity sha1-4nmqrl1cHyVHtM/5kgThJQvHoFg=
+"@typescript-eslint/eslint-plugin@3.7.0":
+  version "3.7.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/eslint-plugin/-/eslint-plugin-3.7.0.tgz#0f91aa3c83d019591719e597fbdb73a59595a263"
+  integrity sha1-D5GqPIPQGVkXGeWX+9tzpZWVomM=
   dependencies:
-    "@typescript-eslint/experimental-utils" "2.19.2"
-    eslint-utils "^1.4.3"
+    "@typescript-eslint/experimental-utils" "3.7.0"
+    debug "^4.1.1"
     functional-red-black-tree "^1.0.1"
     regexpp "^3.0.0"
+    semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@typescript-eslint/experimental-utils@2.19.2":
-  version "2.19.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/experimental-utils/-/experimental-utils-2.19.2.tgz#4611d44cf0f0cb460c26aa7676fc0a787281e233"
-  integrity sha1-RhHUTPDwy0YMJqp2dvwKeHKB4jM=
+"@typescript-eslint/experimental-utils@3.7.0":
+  version "3.7.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/experimental-utils/-/experimental-utils-3.7.0.tgz#0ee21f6c48b2b30c63211da23827725078d5169a"
+  integrity sha1-DuIfbEiyswxjIR2iOCdyUHjVFpo=
   dependencies:
     "@types/json-schema" "^7.0.3"
-    "@typescript-eslint/typescript-estree" "2.19.2"
+    "@typescript-eslint/types" "3.7.0"
+    "@typescript-eslint/typescript-estree" "3.7.0"
     eslint-scope "^5.0.0"
+    eslint-utils "^2.0.0"
 
 "@typescript-eslint/experimental-utils@^2.19.2":
   version "2.34.0"
@@ -3318,28 +3301,21 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/parser@2.19.2":
-  version "2.19.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/parser/-/parser-2.19.2.tgz#21f42c0694846367e7d6a907feb08ab2f89c0879"
-  integrity sha1-IfQsBpSEY2fn1qkH/rCKsvicCHk=
+"@typescript-eslint/parser@3.7.0":
+  version "3.7.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/parser/-/parser-3.7.0.tgz#3e9cd9df9ea644536feb6e5acdb8279ecff96ce9"
+  integrity sha1-PpzZ356mRFNv625azbgnns/5bOk=
   dependencies:
     "@types/eslint-visitor-keys" "^1.0.0"
-    "@typescript-eslint/experimental-utils" "2.19.2"
-    "@typescript-eslint/typescript-estree" "2.19.2"
+    "@typescript-eslint/experimental-utils" "3.7.0"
+    "@typescript-eslint/types" "3.7.0"
+    "@typescript-eslint/typescript-estree" "3.7.0"
     eslint-visitor-keys "^1.1.0"
 
-"@typescript-eslint/typescript-estree@2.19.2":
-  version "2.19.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/typescript-estree/-/typescript-estree-2.19.2.tgz#67485b00172f400474d243c6c0be27581a579350"
-  integrity sha1-Z0hbABcvQAR00kPGwL4nWBpXk1A=
-  dependencies:
-    debug "^4.1.1"
-    eslint-visitor-keys "^1.1.0"
-    glob "^7.1.6"
-    is-glob "^4.0.1"
-    lodash "^4.17.15"
-    semver "^6.3.0"
-    tsutils "^3.17.1"
+"@typescript-eslint/types@3.7.0":
+  version "3.7.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/types/-/types-3.7.0.tgz#09897fab0cb95479c01166b10b2c03c224821077"
+  integrity sha1-CYl/qwy5VHnAEWaxCywDwiSCEHc=
 
 "@typescript-eslint/typescript-estree@2.34.0":
   version "2.34.0"
@@ -3353,6 +3329,27 @@
     lodash "^4.17.15"
     semver "^7.3.2"
     tsutils "^3.17.1"
+
+"@typescript-eslint/typescript-estree@3.7.0":
+  version "3.7.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/typescript-estree/-/typescript-estree-3.7.0.tgz#66872e6da120caa4b64e6b4ca5c8702afc74738d"
+  integrity sha1-ZocubaEgyqS2TmtMpchwKvx0c40=
+  dependencies:
+    "@typescript-eslint/types" "3.7.0"
+    "@typescript-eslint/visitor-keys" "3.7.0"
+    debug "^4.1.1"
+    glob "^7.1.6"
+    is-glob "^4.0.1"
+    lodash "^4.17.15"
+    semver "^7.3.2"
+    tsutils "^3.17.1"
+
+"@typescript-eslint/visitor-keys@3.7.0":
+  version "3.7.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@typescript-eslint/visitor-keys/-/visitor-keys-3.7.0.tgz#ac0417d382a136e4571a0b0dcfe52088cb628177"
+  integrity sha1-rAQX04KhNuRXGgsNz+UgiMtigXc=
+  dependencies:
+    eslint-visitor-keys "^1.1.0"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -3532,7 +3529,7 @@
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha1-0pHGpOl5ibXGHZrPOWrk/hM6cY0=
 
-abab@^2.0.0:
+abab@^2.0.3:
   version "2.0.3"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/abab/-/abab-2.0.3.tgz#623e2075e02eb2d3f2475e49f99c91846467907a"
   integrity sha1-Yj4gdeAustPyR15J+ZyRhGRnkHo=
@@ -3550,30 +3547,30 @@ accepts@^1.3.5, accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-acorn-globals@^4.3.2:
-  version "4.3.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/acorn-globals/-/acorn-globals-4.3.4.tgz#9fa1926addc11c97308c4e66d7add0d40c3272e7"
-  integrity sha1-n6GSat3BHJcwjE5m163Q1Awycuc=
+acorn-globals@^6.0.0:
+  version "6.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/acorn-globals/-/acorn-globals-6.0.0.tgz#46cdd39f0f8ff08a876619b55f5ac8a6dc770b45"
+  integrity sha1-Rs3Tnw+P8IqHZhm1X1rIptx3C0U=
   dependencies:
-    acorn "^6.0.1"
-    acorn-walk "^6.0.1"
+    acorn "^7.1.1"
+    acorn-walk "^7.1.1"
 
 acorn-jsx@^5.2.0:
   version "5.2.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/acorn-jsx/-/acorn-jsx-5.2.0.tgz#4c66069173d6fdd68ed85239fc256226182b2ebe"
   integrity sha1-TGYGkXPW/daO2FI5/CViJhgrLr4=
 
-acorn-walk@^6.0.1:
-  version "6.2.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/acorn-walk/-/acorn-walk-6.2.0.tgz#123cb8f3b84c2171f1f7fb252615b1c78a6b1a8c"
-  integrity sha1-Ejy487hMIXHx9/slJhWxx4prGow=
+acorn-walk@^7.1.1:
+  version "7.2.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/acorn-walk/-/acorn-walk-7.2.0.tgz#0de889a601203909b0fbe07b8938dc21d2e967bc"
+  integrity sha1-DeiJpgEgOQmw++B7iTjcIdLpZ7w=
 
-acorn@^6.0.1, acorn@^6.2.1:
+acorn@^6.2.1:
   version "6.4.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
   integrity sha1-Ux5Yuj9RudrLmmZGyk3r9bFMpHQ=
 
-acorn@^7.1.0, acorn@^7.1.1:
+acorn@^7.1.0, acorn@^7.1.1, acorn@^7.3.1:
   version "7.3.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/acorn/-/acorn-7.3.1.tgz#85010754db53c3fbaf3b9ea3e083aa5c5d147ffd"
   integrity sha1-hQEHVNtTw/uvO56j4IOqXF0Uf/0=
@@ -3685,6 +3682,11 @@ ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
   integrity sha1-46PaS/uubIapwoViXeEkojQCb78=
+
+ansi-colors@^4.1.1:
+  version "4.1.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
+  integrity sha1-y7muJWv3UK8eqzRPIpqif+lLo0g=
 
 ansi-escapes@^3.0.0, ansi-escapes@^3.1.0, ansi-escapes@^3.2.0:
   version "3.2.0"
@@ -3988,7 +3990,7 @@ apollo-link-error@^1.1.1:
     apollo-link-http-common "^0.2.16"
     tslib "^1.9.3"
 
-apollo-link-http-common@^0.2.14, apollo-link-http-common@^0.2.16:
+apollo-link-http-common@^0.2.16:
   version "0.2.16"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/apollo-link-http-common/-/apollo-link-http-common-0.2.16.tgz#756749dafc732792c8ca0923f9a40564b7c59ecc"
   integrity sha1-dWdJ2vxzJ5LIygkj+aQFZLfFnsw=
@@ -4006,7 +4008,7 @@ apollo-link-http@^1.5.17, apollo-link-http@^1.5.5:
     apollo-link-http-common "^0.2.16"
     tslib "^1.9.3"
 
-apollo-link@1.2.14, apollo-link@^1.0.0, apollo-link@^1.2.12, apollo-link@^1.2.14, apollo-link@^1.2.3:
+apollo-link@1.2.14, apollo-link@^1.0.0, apollo-link@^1.2.14, apollo-link@^1.2.3:
   version "1.2.14"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/apollo-link/-/apollo-link-1.2.14.tgz#3feda4b47f9ebba7f4160bef8b977ba725b684d9"
   integrity sha1-P+2ktH+eu6f0Fgvvi5d7pyW2hNk=
@@ -4156,15 +4158,14 @@ apollo-tracing@^0.11.1:
     apollo-server-env "^2.4.5"
     apollo-server-plugin-base "^0.9.1"
 
-apollo-upload-client@13.0.0:
-  version "13.0.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/apollo-upload-client/-/apollo-upload-client-13.0.0.tgz#146d1ddd85d711fcac8ca97a72d3ca6787f2b71b"
-  integrity sha1-FG0d3YXXEfysjKl6ctPKZ4fytxs=
+apollo-upload-client@14.0.1:
+  version "14.0.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/apollo-upload-client/-/apollo-upload-client-14.0.1.tgz#62ca85c4e45d48c2e73cabcdd7cc639492dacb4b"
+  integrity sha1-YsqFxORdSMLnPKvN18xjlJLay0s=
   dependencies:
-    "@babel/runtime" "^7.9.2"
-    apollo-link "^1.2.12"
-    apollo-link-http-common "^0.2.14"
-    extract-files "^8.0.0"
+    "@apollo/client" "^3.0.2"
+    "@babel/runtime" "^7.10.5"
+    extract-files "^8.1.0"
 
 apollo-utilities@1.3.4, apollo-utilities@^1.0.1, apollo-utilities@^1.3.0, apollo-utilities@^1.3.4:
   version "1.3.4"
@@ -4286,11 +4287,6 @@ array-differ@^3.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/array-differ/-/array-differ-3.0.0.tgz#3cbb3d0f316810eafcc47624734237d6aee4ae6b"
   integrity sha1-PLs9DzFoEOr8xHYkc0I31q7krms=
 
-array-equal@^1.0.0:
-  version "1.0.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
-  integrity sha1-jCpe8kcv2ep0KwTHenUJO6J1fJM=
-
 array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
@@ -4353,11 +4349,6 @@ arraybuffer.slice@~0.0.7:
   version "0.0.7"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/arraybuffer.slice/-/arraybuffer.slice-0.0.7.tgz#3bbc4275dd584cc1b10809b89d4e8b63a69e7675"
   integrity sha1-O7xCdd1YTMGxCAm4nU6LY6aednU=
-
-arrify@^1.0.0:
-  version "1.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
-  integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
 arrify@^2.0.1:
   version "2.0.1"
@@ -4577,30 +4568,17 @@ babel-code-frame@^6.22.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
-babel-jest@25.1.0:
-  version "25.1.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/babel-jest/-/babel-jest-25.1.0.tgz#206093ac380a4b78c4404a05b3277391278f80fb"
-  integrity sha1-IGCTrDgKS3jEQEoFsydzkSePgPs=
+babel-jest@26.1.0, babel-jest@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/babel-jest/-/babel-jest-26.1.0.tgz#b20751185fc7569a0f135730584044d1cb934328"
+  integrity sha1-sgdRGF/HVpoPE1cwWEBE0cuTQyg=
   dependencies:
-    "@jest/transform" "^25.1.0"
-    "@jest/types" "^25.1.0"
-    "@types/babel__core" "^7.1.0"
-    babel-plugin-istanbul "^6.0.0"
-    babel-preset-jest "^25.1.0"
-    chalk "^3.0.0"
-    slash "^3.0.0"
-
-babel-jest@^25.5.1:
-  version "25.5.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/babel-jest/-/babel-jest-25.5.1.tgz#bc2e6101f849d6f6aec09720ffc7bc5332e62853"
-  integrity sha1-vC5hAfhJ1vauwJcg/8e8UzLmKFM=
-  dependencies:
-    "@jest/transform" "^25.5.1"
-    "@jest/types" "^25.5.0"
+    "@jest/transform" "^26.1.0"
+    "@jest/types" "^26.1.0"
     "@types/babel__core" "^7.1.7"
     babel-plugin-istanbul "^6.0.0"
-    babel-preset-jest "^25.5.0"
-    chalk "^3.0.0"
+    babel-preset-jest "^26.1.0"
+    chalk "^4.0.0"
     graceful-fs "^4.2.4"
     slash "^3.0.0"
 
@@ -4657,13 +4635,14 @@ babel-plugin-istanbul@^6.0.0:
     istanbul-lib-instrument "^4.0.0"
     test-exclude "^6.0.0"
 
-babel-plugin-jest-hoist@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-25.5.0.tgz#129c80ba5c7fc75baf3a45b93e2e372d57ca2677"
-  integrity sha1-EpyAulx/x1uvOkW5Pi43LVfKJnc=
+babel-plugin-jest-hoist@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-26.1.0.tgz#c6a774da08247a28285620a64dfadbd05dd5233a"
+  integrity sha1-xqd02ggkeigoViCmTfrb0F3VIzo=
   dependencies:
     "@babel/template" "^7.3.3"
     "@babel/types" "^7.3.3"
+    "@types/babel__core" "^7.0.0"
     "@types/babel__traverse" "^7.0.6"
 
 babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.8.0:
@@ -4740,12 +4719,12 @@ babel-preset-fbjs@^3.3.0:
     "@babel/plugin-transform-template-literals" "^7.0.0"
     babel-plugin-syntax-trailing-function-commas "^7.0.0-beta.0"
 
-babel-preset-jest@^25.1.0, babel-preset-jest@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/babel-preset-jest/-/babel-preset-jest-25.5.0.tgz#c1d7f191829487a907764c65307faa0e66590b49"
-  integrity sha1-wdfxkYKUh6kHdkxlMH+qDmZZC0k=
+babel-preset-jest@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/babel-preset-jest/-/babel-preset-jest-26.1.0.tgz#612f714e5b457394acfd863793c564cbcdb7d1c1"
+  integrity sha1-YS9xTltFc5Ss/YY3k8Vky8230cE=
   dependencies:
-    babel-plugin-jest-hoist "^25.5.0"
+    babel-plugin-jest-hoist "^26.1.0"
     babel-preset-current-node-syntax "^0.1.2"
 
 backo2@1.0.2, backo2@^1.0.2:
@@ -4962,13 +4941,6 @@ browser-process-hrtime@^1.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/browser-process-hrtime/-/browser-process-hrtime-1.0.0.tgz#3c9b4b7d782c8121e56f10106d84c0d0ffc94626"
   integrity sha1-PJtLfXgsgSHlbxAQbYTA0P/JRiY=
 
-browser-resolve@^1.11.3:
-  version "1.11.3"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/browser-resolve/-/browser-resolve-1.11.3.tgz#9b7cbb3d0f510e4cb86bdbd796124d28b5890af6"
-  integrity sha1-m3y7PQ9RDky4a9vXlhJNKLWJCvY=
-  dependencies:
-    resolve "1.1.7"
-
 browserify-aes@^1.0.0, browserify-aes@^1.0.4:
   version "1.2.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/browserify-aes/-/browserify-aes-1.2.0.tgz#326734642f403dabc3003209853bb70ad428ef48"
@@ -5068,7 +5040,7 @@ buffer-crc32@~0.2.3:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/buffer-crc32/-/buffer-crc32-0.2.13.tgz#0d333e3f00eac50aa1454abd30ef8c2a5d9a7242"
   integrity sha1-DTM+PwDqxQqhRUq9MO+MKl2ackI=
 
-buffer-from@1.x, buffer-from@^1.0.0, buffer-from@^1.1.0:
+buffer-from@1.x, buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha1-MnE7wCj3XAL9txDXx7zsHyxgcO8=
@@ -5388,7 +5360,7 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0, chalk@^4.1.0:
+chalk@^4.0.0:
   version "4.1.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
   integrity sha1-ThSHCmGNni7dl92DRf2dncMVZGo=
@@ -5413,6 +5385,11 @@ change-case@^4.0.0:
     sentence-case "^3.0.3"
     snake-case "^3.0.3"
     tslib "^1.10.0"
+
+char-regex@^1.0.2:
+  version "1.0.2"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/char-regex/-/char-regex-1.0.2.tgz#d744358226217f981ed58f479b1d6bcc29545dcf"
+  integrity sha1-10Q1giYhf5ge1Y9Hmx1rzClUXc8=
 
 chardet@^0.7.0:
   version "0.7.0"
@@ -5718,11 +5695,6 @@ cli-width@^2.0.0:
   version "2.2.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/cli-width/-/cli-width-2.2.1.tgz#b0433d0b4e9c847ef18868a4ef16fd5fc8271c48"
   integrity sha1-sEM9C06chH7xiGik7xb9X8gnHEg=
-
-cli-width@^3.0.0:
-  version "3.0.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/cli-width/-/cli-width-3.0.0.tgz#a2f48437a2caa9a22436e794bf071ec9e61cedf6"
-  integrity sha1-ovSEN6LKqaIkNueUvwceyeYc7fY=
 
 cliui@^4.0.0:
   version "4.1.0"
@@ -6239,7 +6211,7 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cross-spawn@^7.0.0:
+cross-spawn@^7.0.0, cross-spawn@^7.0.2:
   version "7.0.3"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
   integrity sha1-9zqFudXUHQRVUcF34ogtSshXKKY=
@@ -6476,7 +6448,7 @@ csso@^4.0.2:
   dependencies:
     css-tree "1.0.0-alpha.39"
 
-cssom@^0.4.1:
+cssom@^0.4.4:
   version "0.4.4"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/cssom/-/cssom-0.4.4.tgz#5a66cf93d2d0b661d80bf6a44fb65f5c2e4e0a10"
   integrity sha1-WmbPk9LQtmHYC/akT7ZfXC5OChA=
@@ -6486,7 +6458,7 @@ cssom@~0.3.6:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/cssom/-/cssom-0.3.8.tgz#9f1276f5b2b463f2114d3f2c75250af8c1a36f4a"
   integrity sha1-nxJ29bK0Y/IRTT8sdSUK+MGjb0o=
 
-cssstyle@^2.0.0:
+cssstyle@^2.2.0:
   version "2.3.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/cssstyle/-/cssstyle-2.3.0.tgz#ff665a0ddbdc31864b09647f34163443d90b0852"
   integrity sha1-/2ZaDdvcMYZLCWR/NBY0Q9kLCFI=
@@ -6508,7 +6480,7 @@ cyclist@^1.0.1:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-cypress@^4.1.0:
+cypress@^4.11.0:
   version "4.11.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/cypress/-/cypress-4.11.0.tgz#054b0b85fd3aea793f186249ee1216126d5f0a7e"
   integrity sha1-BUsLhf066nk/GGJJ7hIWEm1fCn4=
@@ -6571,14 +6543,14 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-data-urls@^1.1.0:
-  version "1.1.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/data-urls/-/data-urls-1.1.0.tgz#15ee0582baa5e22bb59c77140da8f9c76963bbfe"
-  integrity sha1-Fe4Fgrql4iu1nHcUDaj5x2lju/4=
+data-urls@^2.0.0:
+  version "2.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/data-urls/-/data-urls-2.0.0.tgz#156485a72963a970f5d5821aaf642bef2bf2db9b"
+  integrity sha1-FWSFpyljqXD11YIar2Qr7yvy25s=
   dependencies:
-    abab "^2.0.0"
-    whatwg-mimetype "^2.2.0"
-    whatwg-url "^7.0.0"
+    abab "^2.0.3"
+    whatwg-mimetype "^2.3.0"
+    whatwg-url "^8.0.0"
 
 dataloader@2.0.0:
   version "2.0.0"
@@ -6633,6 +6605,11 @@ decamelize@^1.1.1, decamelize@^1.2.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
+decimal.js@^10.2.0:
+  version "10.2.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/decimal.js/-/decimal.js-10.2.0.tgz#39466113a9e036111d02f82489b5fd6b0b5ed231"
+  integrity sha1-OUZhE6ngNhEdAvgkibX9awte0jE=
+
 decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
@@ -6662,7 +6639,7 @@ deep-for-each@^3.0.0:
   dependencies:
     lodash.isplainobject "^4.0.6"
 
-deep-is@~0.1.3:
+deep-is@^0.1.3, deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
@@ -6805,10 +6782,10 @@ diff-sequences@^25.2.6:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/diff-sequences/-/diff-sequences-25.2.6.tgz#5f467c00edd35352b7bca46d7927d60e687a76dd"
   integrity sha1-X0Z8AO3TU1K3vKRteSfWDmh6dt0=
 
-diff@^3.1.0:
-  version "3.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
-  integrity sha1-gAwN0eCov7yVg1wgKtIg/jF+WhI=
+diff-sequences@^26.0.0:
+  version "26.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/diff-sequences/-/diff-sequences-26.0.0.tgz#0760059a5c287637b842bd7085311db7060e88a6"
+  integrity sha1-B2AFmlwodje4Qr1whTEdtwYOiKY=
 
 diff@^4.0.1:
   version "4.0.2"
@@ -6880,12 +6857,12 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-document-register-element@1.13.1:
-  version "1.13.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/document-register-element/-/document-register-element-1.13.1.tgz#dad8cb7be38e04ee3f56842e6cf81af46c1249ba"
-  integrity sha1-2tjLe+OOBO4/VoQubPga9GwSSbo=
+document-register-element@1.14.3:
+  version "1.14.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/document-register-element/-/document-register-element-1.14.3.tgz#3335d4578df6a1536a34595b91cca36dd5db61d7"
+  integrity sha1-MzXUV432oVNqNFlbkcyjbdXbYdc=
   dependencies:
-    lightercollective "^0.1.0"
+    lightercollective "^0.3.0"
 
 dom-accessibility-api@^0.4.6:
   version "0.4.6"
@@ -6923,12 +6900,12 @@ domelementtype@^2.0.1:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/domelementtype/-/domelementtype-2.0.1.tgz#1f8bdfe91f5a78063274e803b4bdcedf6e94f94d"
   integrity sha1-H4vf6R9aeAYydOgDtL3O326U+U0=
 
-domexception@^1.0.1:
-  version "1.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/domexception/-/domexception-1.0.1.tgz#937442644ca6a31261ef36e3ec677fe805582c90"
-  integrity sha1-k3RCZEymoxJh7zbj7Gd/6AVYLJA=
+domexception@^2.0.1:
+  version "2.0.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/domexception/-/domexception-2.0.1.tgz#fb44aefba793e1574b0af6aed2801d057529f304"
+  integrity sha1-+0Su+6eT4VdLCvau0oAdBXUp8wQ=
   dependencies:
-    webidl-conversions "^4.0.2"
+    webidl-conversions "^5.0.0"
 
 domhandler@^2.3.0:
   version "2.4.2"
@@ -6975,15 +6952,15 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@6.2.0, dotenv@^6.2.0:
-  version "6.2.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
-  integrity sha1-lBwEEFNdlCyL7PKNPzV9vZ1HYGQ=
-
 dotenv@8.2.0, dotenv@^8.0.0:
   version "8.2.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha1-l+YZJZradQ7qPk6j4mvO6lQksWo=
+
+dotenv@^6.2.0:
+  version "6.2.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
+  integrity sha1-lBwEEFNdlCyL7PKNPzV9vZ1HYGQ=
 
 driftless@^2.0.3:
   version "2.0.3"
@@ -7137,6 +7114,13 @@ enhanced-resolve@^4.0.0, enhanced-resolve@^4.1.0:
     memory-fs "^0.5.0"
     tapable "^1.0.0"
 
+enquirer@^2.3.5:
+  version "2.3.6"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/enquirer/-/enquirer-2.3.6.tgz#2a7fe5dd634a1e4125a975ec994ff5456dc3734d"
+  integrity sha1-Kn/l3WNKHkElqXXsmU/1RW3Dc00=
+  dependencies:
+    ansi-colors "^4.1.1"
+
 entities@^1.1.1, entities@~1.1.1:
   version "1.1.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
@@ -7261,7 +7245,12 @@ escape-string-regexp@4.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha1-FLqDpdNz49MR5a/KKc9b+tllvzQ=
 
-escodegen@^1.11.1, escodegen@^1.8.1:
+escape-string-regexp@^2.0.0:
+  version "2.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
+  integrity sha1-owME6Z2qMuI7L9IPUbq9B8/8o0Q=
+
+escodegen@^1.14.1, escodegen@^1.8.1:
   version "1.14.3"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/escodegen/-/escodegen-1.14.3.tgz#4e7b81fba61581dc97582ed78cab7f0e8d63f503"
   integrity sha1-TnuB+6YVgdyXWC7XjKt/Do1j9QM=
@@ -7273,10 +7262,10 @@ escodegen@^1.11.1, escodegen@^1.8.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-prettier@6.0.0:
-  version "6.0.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-config-prettier/-/eslint-config-prettier-6.0.0.tgz#f429a53bde9fc7660e6353910fd996d6284d3c25"
-  integrity sha1-9CmlO96fx2YOY1ORD9mW1ihNPCU=
+eslint-config-prettier@6.11.0:
+  version "6.11.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-config-prettier/-/eslint-config-prettier-6.11.0.tgz#f6d2238c1290d01c859a8b5c1f7d352a0b0da8b1"
+  integrity sha1-9tIjjBKQ0ByFmotcH301KgsNqLE=
   dependencies:
     get-stdin "^6.0.0"
 
@@ -7296,33 +7285,14 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-cypress@^2.10.3:
+eslint-plugin-cypress@^2.11.1:
   version "2.11.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-plugin-cypress/-/eslint-plugin-cypress-2.11.1.tgz#a945e2774b88211e2c706a059d431e262b5c2862"
   integrity sha1-qUXid0uIIR4scGoFnUMeJitcKGI=
   dependencies:
     globals "^11.12.0"
 
-eslint-plugin-import@2.21.2:
-  version "2.21.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-plugin-import/-/eslint-plugin-import-2.21.2.tgz#8fef77475cc5510801bedc95f84b932f7f334a7c"
-  integrity sha1-j+93R1zFUQgBvtyV+EuTL38zSnw=
-  dependencies:
-    array-includes "^3.1.1"
-    array.prototype.flat "^1.2.3"
-    contains-path "^0.1.0"
-    debug "^2.6.9"
-    doctrine "1.5.0"
-    eslint-import-resolver-node "^0.3.3"
-    eslint-module-utils "^2.6.0"
-    has "^1.0.3"
-    minimatch "^3.0.4"
-    object.values "^1.1.1"
-    read-pkg-up "^2.0.0"
-    resolve "^1.17.0"
-    tsconfig-paths "^3.9.0"
-
-eslint-plugin-import@^2.20.1:
+eslint-plugin-import@2.22.0, eslint-plugin-import@^2.20.1:
   version "2.22.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-plugin-import/-/eslint-plugin-import-2.22.0.tgz#92f7736fe1fde3e2de77623c838dd992ff5ffb7e"
   integrity sha1-kvdzb+H94+Led2I8g43Zkv9f+34=
@@ -7358,34 +7328,17 @@ eslint-plugin-jsx-a11y@6.3.1, eslint-plugin-jsx-a11y@^6.2.3:
     jsx-ast-utils "^2.4.1"
     language-tags "^1.0.5"
 
-eslint-plugin-react-hooks@4.0.4:
-  version "4.0.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.4.tgz#aed33b4254a41b045818cacb047b81e6df27fa58"
-  integrity sha1-rtM7QlSkGwRYGMrLBHuB5t8n+lg=
+eslint-plugin-react-hooks@4.0.8:
+  version "4.0.8"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.8.tgz#a9b1e3d57475ccd18276882eff3d6cba00da7a56"
+  integrity sha1-qbHj1XR1zNGCdogu/z1sugDaelY=
 
 eslint-plugin-react-hooks@^2.4.0:
   version "2.5.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.5.1.tgz#4ef5930592588ce171abeb26f400c7fbcbc23cd0"
   integrity sha1-TvWTBZJYjOFxq+sm9ADH+8vCPNA=
 
-eslint-plugin-react@7.20.0:
-  version "7.20.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-plugin-react/-/eslint-plugin-react-7.20.0.tgz#f98712f0a5e57dfd3e5542ef0604b8739cd47be3"
-  integrity sha1-+YcS8KXlff0+VULvBgS4c5zUe+M=
-  dependencies:
-    array-includes "^3.1.1"
-    doctrine "^2.1.0"
-    has "^1.0.3"
-    jsx-ast-utils "^2.2.3"
-    object.entries "^1.1.1"
-    object.fromentries "^2.0.2"
-    object.values "^1.1.1"
-    prop-types "^15.7.2"
-    resolve "^1.15.1"
-    string.prototype.matchall "^4.0.2"
-    xregexp "^4.3.0"
-
-eslint-plugin-react@^7.18.3:
+eslint-plugin-react@7.20.3, eslint-plugin-react@^7.18.3:
   version "7.20.3"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-plugin-react/-/eslint-plugin-react-7.20.3.tgz#0590525e7eb83890ce71f73c2cf836284ad8c2f1"
   integrity sha1-BZBSXn64OJDOcfc8LPg2KErYwvE=
@@ -7410,7 +7363,7 @@ eslint-scope@^4.0.3:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-scope@^5.0.0:
+eslint-scope@^5.0.0, eslint-scope@^5.1.0:
   version "5.1.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-scope/-/eslint-scope-5.1.0.tgz#d0f971dfe59c69e0cada684b23d49dbf82600ce5"
   integrity sha1-0Plx3+WcaeDK2mhLI9Sdv4JgDOU=
@@ -7418,41 +7371,35 @@ eslint-scope@^5.0.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-utils@^1.4.3:
-  version "1.4.3"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-utils/-/eslint-utils-1.4.3.tgz#74fec7c54d0776b6f67e0251040b5806564e981f"
-  integrity sha1-dP7HxU0Hdrb2fgJRBAtYBlZOmB8=
-  dependencies:
-    eslint-visitor-keys "^1.1.0"
-
-eslint-utils@^2.0.0:
+eslint-utils@^2.0.0, eslint-utils@^2.1.0:
   version "2.1.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-utils/-/eslint-utils-2.1.0.tgz#d2de5e03424e707dc10c74068ddedae708741b27"
   integrity sha1-0t5eA0JOcH3BDHQGjd7a5wh0Gyc=
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
-eslint-visitor-keys@^1.1.0:
+eslint-visitor-keys@^1.1.0, eslint-visitor-keys@^1.3.0:
   version "1.3.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint-visitor-keys/-/eslint-visitor-keys-1.3.0.tgz#30ebd1ef7c2fdff01c3a4f151044af25fab0523e"
   integrity sha1-MOvR73wv3/AcOk8VEESvJfqwUj4=
 
-eslint@6.8.0:
-  version "6.8.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint/-/eslint-6.8.0.tgz#62262d6729739f9275723824302fb227c8c93ffb"
-  integrity sha1-YiYtZylzn5J1cjgkMC+yJ8jJP/s=
+eslint@7.5.0:
+  version "7.5.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/eslint/-/eslint-7.5.0.tgz#9ecbfad62216d223b82ac9ffea7ef3444671d135"
+  integrity sha1-nsv61iIW0iO4Ksn/6n7zREZx0TU=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
-    chalk "^2.1.0"
-    cross-spawn "^6.0.5"
+    chalk "^4.0.0"
+    cross-spawn "^7.0.2"
     debug "^4.0.1"
     doctrine "^3.0.0"
-    eslint-scope "^5.0.0"
-    eslint-utils "^1.4.3"
-    eslint-visitor-keys "^1.1.0"
-    espree "^6.1.2"
-    esquery "^1.0.1"
+    enquirer "^2.3.5"
+    eslint-scope "^5.1.0"
+    eslint-utils "^2.1.0"
+    eslint-visitor-keys "^1.3.0"
+    espree "^7.2.0"
+    esquery "^1.2.0"
     esutils "^2.0.2"
     file-entry-cache "^5.0.1"
     functional-red-black-tree "^1.0.1"
@@ -7461,33 +7408,31 @@ eslint@6.8.0:
     ignore "^4.0.6"
     import-fresh "^3.0.0"
     imurmurhash "^0.1.4"
-    inquirer "^7.0.0"
     is-glob "^4.0.0"
     js-yaml "^3.13.1"
     json-stable-stringify-without-jsonify "^1.0.1"
-    levn "^0.3.0"
-    lodash "^4.17.14"
+    levn "^0.4.1"
+    lodash "^4.17.19"
     minimatch "^3.0.4"
-    mkdirp "^0.5.1"
     natural-compare "^1.4.0"
-    optionator "^0.8.3"
+    optionator "^0.9.1"
     progress "^2.0.0"
-    regexpp "^2.0.1"
-    semver "^6.1.2"
-    strip-ansi "^5.2.0"
-    strip-json-comments "^3.0.1"
+    regexpp "^3.1.0"
+    semver "^7.2.1"
+    strip-ansi "^6.0.0"
+    strip-json-comments "^3.1.0"
     table "^5.2.3"
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-espree@^6.1.2:
-  version "6.2.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/espree/-/espree-6.2.1.tgz#77fc72e1fd744a2052c20f38a5b575832e82734a"
-  integrity sha1-d/xy4f10SiBSwg84pbV1gy6Cc0o=
+espree@^7.2.0:
+  version "7.2.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/espree/-/espree-7.2.0.tgz#1c263d5b513dbad0ac30c4991b93ac354e948d69"
+  integrity sha1-HCY9W1E9utCsMMSZG5OsNU6UjWk=
   dependencies:
-    acorn "^7.1.1"
+    acorn "^7.3.1"
     acorn-jsx "^5.2.0"
-    eslint-visitor-keys "^1.1.0"
+    eslint-visitor-keys "^1.3.0"
 
 esprima@1.2.2:
   version "1.2.2"
@@ -7499,7 +7444,7 @@ esprima@^4.0.0, esprima@^4.0.1, esprima@~4.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha1-E7BM2z5sXRnfkatph6hpVhmwqnE=
 
-esquery@^1.0.1:
+esquery@^1.2.0:
   version "1.3.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/esquery/-/esquery-1.3.1.tgz#b78b5828aa8e214e29fb74c4d5b752e1c033da57"
   integrity sha1-t4tYKKqOIU4p+3TE1bdS4cAz2lc=
@@ -7617,10 +7562,10 @@ execa@^0.7.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-execa@^3.2.0:
-  version "3.4.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/execa/-/execa-3.4.0.tgz#c08ed4550ef65d858fac269ffc8572446f37eb89"
-  integrity sha1-wI7UVQ72XYWPrCaf/IVyRG8364k=
+execa@^4.0.0:
+  version "4.0.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/execa/-/execa-4.0.3.tgz#0a34dabbad6d66100bd6f2c576c8669403f317f2"
+  integrity sha1-CjTau61tZhAL1vLFdshmlAPzF/I=
   dependencies:
     cross-spawn "^7.0.0"
     get-stream "^5.0.0"
@@ -7629,7 +7574,6 @@ execa@^3.2.0:
     merge-stream "^2.0.0"
     npm-run-path "^4.0.0"
     onetime "^5.1.0"
-    p-finally "^2.0.0"
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
@@ -7663,17 +7607,17 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-expect@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/expect/-/expect-25.5.0.tgz#f07f848712a2813bb59167da3fb828ca21f58bba"
-  integrity sha1-8H+EhxKigTu1kWfaP7goyiH1i7o=
+expect@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/expect/-/expect-26.1.0.tgz#8c62e31d0f8d5a8ebb186ee81473d15dd2fbf7c8"
+  integrity sha1-jGLjHQ+NWo67GG7oFHPRXdL798g=
   dependencies:
-    "@jest/types" "^25.5.0"
+    "@jest/types" "^26.1.0"
     ansi-styles "^4.0.0"
-    jest-get-type "^25.2.6"
-    jest-matcher-utils "^25.5.0"
-    jest-message-util "^25.5.0"
-    jest-regex-util "^25.2.6"
+    jest-get-type "^26.0.0"
+    jest-matcher-utils "^26.1.0"
+    jest-message-util "^26.1.0"
+    jest-regex-util "^26.0.0"
 
 express@4.17.1, express@^4.0.0, express@^4.17.1:
   version "4.17.1"
@@ -7761,7 +7705,7 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-extract-files@^8.0.0:
+extract-files@^8.1.0:
   version "8.1.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/extract-files/-/extract-files-8.1.0.tgz#46a0690d0fe77411a2e3804852adeaa65cd59288"
   integrity sha1-RqBpDQ/ndBGi44BIUq3qplzVkog=
@@ -7914,13 +7858,6 @@ figures@^2.0.0:
   version "2.0.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
   integrity sha1-OrGi0qYsi/tDGgyUy3l6L84nyWI=
-  dependencies:
-    escape-string-regexp "^1.0.5"
-
-figures@^3.0.0:
-  version "3.2.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/figures/-/figures-3.2.0.tgz#625c18bd293c604dc4a8ddb2febf0c88341746af"
-  integrity sha1-YlwYvSk8YE3EqN2y/r8MiDQXRq8=
   dependencies:
     escape-string-regexp "^1.0.5"
 
@@ -8618,33 +8555,33 @@ graphql-tools@^4.0.0:
     iterall "^1.1.3"
     uuid "^3.1.0"
 
-graphql-tools@^6.0.14:
-  version "6.0.14"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/graphql-tools/-/graphql-tools-6.0.14.tgz#47e40d7d7f46166d4d840de39e04375c505207d3"
-  integrity sha1-R+QNfX9GFm1NhA3jngQ3XFBSB9M=
+graphql-tools@^6.0.15:
+  version "6.0.15"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/graphql-tools/-/graphql-tools-6.0.15.tgz#502d26203487dca452ca51888180104bb3c345ff"
+  integrity sha1-UC0mIDSH3KRSylGIgYAQS7PDRf8=
   dependencies:
-    "@graphql-tools/batch-delegate" "6.0.14"
-    "@graphql-tools/code-file-loader" "6.0.14"
-    "@graphql-tools/delegate" "6.0.14"
-    "@graphql-tools/git-loader" "6.0.14"
-    "@graphql-tools/github-loader" "6.0.14"
-    "@graphql-tools/graphql-file-loader" "6.0.14"
-    "@graphql-tools/graphql-tag-pluck" "6.0.14"
-    "@graphql-tools/import" "6.0.14"
-    "@graphql-tools/json-file-loader" "6.0.14"
-    "@graphql-tools/links" "6.0.14"
-    "@graphql-tools/load" "6.0.14"
-    "@graphql-tools/load-files" "6.0.14"
-    "@graphql-tools/merge" "6.0.14"
-    "@graphql-tools/mock" "6.0.14"
-    "@graphql-tools/module-loader" "6.0.14"
-    "@graphql-tools/relay-operation-optimizer" "6.0.14"
-    "@graphql-tools/resolvers-composition" "6.0.14"
-    "@graphql-tools/schema" "6.0.14"
-    "@graphql-tools/stitch" "6.0.14"
-    "@graphql-tools/url-loader" "6.0.14"
-    "@graphql-tools/utils" "6.0.14"
-    "@graphql-tools/wrap" "6.0.14"
+    "@graphql-tools/batch-delegate" "6.0.15"
+    "@graphql-tools/code-file-loader" "6.0.15"
+    "@graphql-tools/delegate" "6.0.15"
+    "@graphql-tools/git-loader" "6.0.15"
+    "@graphql-tools/github-loader" "6.0.15"
+    "@graphql-tools/graphql-file-loader" "6.0.15"
+    "@graphql-tools/graphql-tag-pluck" "6.0.15"
+    "@graphql-tools/import" "6.0.15"
+    "@graphql-tools/json-file-loader" "6.0.15"
+    "@graphql-tools/links" "6.0.15"
+    "@graphql-tools/load" "6.0.15"
+    "@graphql-tools/load-files" "6.0.15"
+    "@graphql-tools/merge" "6.0.15"
+    "@graphql-tools/mock" "6.0.15"
+    "@graphql-tools/module-loader" "6.0.15"
+    "@graphql-tools/relay-operation-optimizer" "6.0.15"
+    "@graphql-tools/resolvers-composition" "6.0.15"
+    "@graphql-tools/schema" "6.0.15"
+    "@graphql-tools/stitch" "6.0.15"
+    "@graphql-tools/url-loader" "6.0.15"
+    "@graphql-tools/utils" "6.0.15"
+    "@graphql-tools/wrap" "6.0.15"
 
 graphql-upload@^8.0.2:
   version "8.1.0"
@@ -8901,12 +8838,12 @@ html-comment-regex@^1.1.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/html-comment-regex/-/html-comment-regex-1.1.2.tgz#97d4688aeb5c81886a364faa0cad1dda14d433a7"
   integrity sha1-l9RoiutcgYhqNk+qDK0d2hTUM6c=
 
-html-encoding-sniffer@^1.0.2:
-  version "1.0.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/html-encoding-sniffer/-/html-encoding-sniffer-1.0.2.tgz#e70d84b94da53aa375e11fe3a351be6642ca46f8"
-  integrity sha1-5w2EuU2lOqN14R/jo1G+ZkLKRvg=
+html-encoding-sniffer@^2.0.1:
+  version "2.0.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/html-encoding-sniffer/-/html-encoding-sniffer-2.0.1.tgz#42a6dc4fd33f00281176e8b23759ca4e4fa185f3"
+  integrity sha1-QqbcT9M/ACgRduiyN1nKTk+hhfM=
   dependencies:
-    whatwg-encoding "^1.0.1"
+    whatwg-encoding "^1.0.5"
 
 html-entities@^1.2.1:
   version "1.3.1"
@@ -9299,25 +9236,6 @@ inquirer@^6.3.1:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
-inquirer@^7.0.0:
-  version "7.3.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/inquirer/-/inquirer-7.3.2.tgz#25245d2e32dc9f33dbe26eeaada231daa66e9c7c"
-  integrity sha1-JSRdLjLcnzPb4m7qraIx2qZunHw=
-  dependencies:
-    ansi-escapes "^4.2.1"
-    chalk "^4.1.0"
-    cli-cursor "^3.1.0"
-    cli-width "^3.0.0"
-    external-editor "^3.0.3"
-    figures "^3.0.0"
-    lodash "^4.17.16"
-    mute-stream "0.0.8"
-    run-async "^2.4.0"
-    rxjs "^6.6.0"
-    string-width "^4.1.0"
-    strip-ansi "^6.0.0"
-    through "^2.3.6"
-
 internal-ip@^4.3.0:
   version "4.3.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/internal-ip/-/internal-ip-4.3.0.tgz#845452baad9d2ca3b69c635a137acb9a0dad0907"
@@ -9682,6 +9600,11 @@ is-plain-object@^3.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/is-plain-object/-/is-plain-object-3.0.1.tgz#662d92d24c0aa4302407b0d45d21f2251c85f85b"
   integrity sha1-Zi2S0kwKpDAkB7DUXSHyJRyF+Fs=
 
+is-potential-custom-element-name@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/is-potential-custom-element-name/-/is-potential-custom-element-name-1.0.0.tgz#0c52e54bcca391bb2c494b21e8626d7336c6e397"
+  integrity sha1-DFLlS8yjkbssSUsh6GJtczbG45c=
+
 is-promise@^2.1, is-promise@^2.1.0:
   version "2.2.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/is-promise/-/is-promise-2.2.2.tgz#39ab959ccbf9a774cf079f7b40c7a26f763135f1"
@@ -9850,7 +9773,7 @@ istanbul-lib-coverage@^3.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/istanbul-lib-coverage/-/istanbul-lib-coverage-3.0.0.tgz#f5944a37c70b550b02a78a5c3b2055b280cec8ec"
   integrity sha1-9ZRKN8cLVQsCp4pcOyBVsoDOyOw=
 
-istanbul-lib-instrument@^4.0.0:
+istanbul-lib-instrument@^4.0.0, istanbul-lib-instrument@^4.0.3:
   version "4.0.3"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/istanbul-lib-instrument/-/istanbul-lib-instrument-4.0.3.tgz#873c6fff897450118222774696a3f28902d77c1d"
   integrity sha1-hzxv/4l0UBGCIndGlqPyiQLXfB0=
@@ -9906,59 +9829,57 @@ java-properties@^1.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/java-properties/-/java-properties-1.0.2.tgz#ccd1fa73907438a5b5c38982269d0e771fe78211"
   integrity sha1-zNH6c5B0OKW1w4mCJp0Odx/nghE=
 
-jest-changed-files@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-changed-files/-/jest-changed-files-25.5.0.tgz#141cc23567ceb3f534526f8614ba39421383634c"
-  integrity sha1-FBzCNWfOs/U0Um+GFLo5QhODY0w=
+jest-changed-files@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-changed-files/-/jest-changed-files-26.1.0.tgz#de66b0f30453bca2aff98e9400f75905da495305"
+  integrity sha1-3maw8wRTvKKv+Y6UAPdZBdpJUwU=
   dependencies:
-    "@jest/types" "^25.5.0"
-    execa "^3.2.0"
+    "@jest/types" "^26.1.0"
+    execa "^4.0.0"
     throat "^5.0.0"
 
-jest-cli@^25.2.3:
-  version "25.5.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-cli/-/jest-cli-25.5.4.tgz#b9f1a84d1301a92c5c217684cb79840831db9f0d"
-  integrity sha1-ufGoTRMBqSxcIXaEy3mECDHbnw0=
+jest-cli@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-cli/-/jest-cli-26.1.0.tgz#eb9ec8a18cf3b6aa556d9deaa9e24be12b43ad87"
+  integrity sha1-657IoYzztqpVbZ3qqeJL4StDrYc=
   dependencies:
-    "@jest/core" "^25.5.4"
-    "@jest/test-result" "^25.5.0"
-    "@jest/types" "^25.5.0"
-    chalk "^3.0.0"
+    "@jest/core" "^26.1.0"
+    "@jest/test-result" "^26.1.0"
+    "@jest/types" "^26.1.0"
+    chalk "^4.0.0"
     exit "^0.1.2"
     graceful-fs "^4.2.4"
     import-local "^3.0.2"
     is-ci "^2.0.0"
-    jest-config "^25.5.4"
-    jest-util "^25.5.0"
-    jest-validate "^25.5.0"
+    jest-config "^26.1.0"
+    jest-util "^26.1.0"
+    jest-validate "^26.1.0"
     prompts "^2.0.1"
-    realpath-native "^2.0.0"
     yargs "^15.3.1"
 
-jest-config@^25.5.4:
-  version "25.5.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-config/-/jest-config-25.5.4.tgz#38e2057b3f976ef7309b2b2c8dcd2a708a67f02c"
-  integrity sha1-OOIFez+Xbvcwmyssjc0qcIpn8Cw=
+jest-config@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-config/-/jest-config-26.1.0.tgz#9074f7539acc185e0113ad6d22ed589c16a37a73"
+  integrity sha1-kHT3U5rMGF4BE61tIu1YnBajenM=
   dependencies:
     "@babel/core" "^7.1.0"
-    "@jest/test-sequencer" "^25.5.4"
-    "@jest/types" "^25.5.0"
-    babel-jest "^25.5.1"
-    chalk "^3.0.0"
+    "@jest/test-sequencer" "^26.1.0"
+    "@jest/types" "^26.1.0"
+    babel-jest "^26.1.0"
+    chalk "^4.0.0"
     deepmerge "^4.2.2"
     glob "^7.1.1"
     graceful-fs "^4.2.4"
-    jest-environment-jsdom "^25.5.0"
-    jest-environment-node "^25.5.0"
-    jest-get-type "^25.2.6"
-    jest-jasmine2 "^25.5.4"
-    jest-regex-util "^25.2.6"
-    jest-resolve "^25.5.1"
-    jest-util "^25.5.0"
-    jest-validate "^25.5.0"
+    jest-environment-jsdom "^26.1.0"
+    jest-environment-node "^26.1.0"
+    jest-get-type "^26.0.0"
+    jest-jasmine2 "^26.1.0"
+    jest-regex-util "^26.0.0"
+    jest-resolve "^26.1.0"
+    jest-util "^26.1.0"
+    jest-validate "^26.1.0"
     micromatch "^4.0.2"
-    pretty-format "^25.5.0"
-    realpath-native "^2.0.0"
+    pretty-format "^26.1.0"
 
 jest-diff@^25.1.0, jest-diff@^25.2.1, jest-diff@^25.5.0:
   version "25.5.0"
@@ -9970,66 +9891,80 @@ jest-diff@^25.1.0, jest-diff@^25.2.1, jest-diff@^25.5.0:
     jest-get-type "^25.2.6"
     pretty-format "^25.5.0"
 
-jest-docblock@^25.3.0:
-  version "25.3.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-docblock/-/jest-docblock-25.3.0.tgz#8b777a27e3477cd77a168c05290c471a575623ef"
-  integrity sha1-i3d6J+NHfNd6FowFKQxHGldWI+8=
+jest-diff@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-diff/-/jest-diff-26.1.0.tgz#00a549bdc936c9691eb4dc25d1fbd78bf456abb2"
+  integrity sha1-AKVJvck2yWketNwl0fvXi/RWq7I=
+  dependencies:
+    chalk "^4.0.0"
+    diff-sequences "^26.0.0"
+    jest-get-type "^26.0.0"
+    pretty-format "^26.1.0"
+
+jest-docblock@^26.0.0:
+  version "26.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-docblock/-/jest-docblock-26.0.0.tgz#3e2fa20899fc928cb13bd0ff68bd3711a36889b5"
+  integrity sha1-Pi+iCJn8koyxO9D/aL03EaNoibU=
   dependencies:
     detect-newline "^3.0.0"
 
-jest-each@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-each/-/jest-each-25.5.0.tgz#0c3c2797e8225cb7bec7e4d249dcd96b934be516"
-  integrity sha1-DDwnl+giXLe+x+TSSdzZa5NL5RY=
+jest-each@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-each/-/jest-each-26.1.0.tgz#e35449875009a22d74d1bda183b306db20f286f7"
+  integrity sha1-41RJh1AJoi100b2hg7MG2yDyhvc=
   dependencies:
-    "@jest/types" "^25.5.0"
-    chalk "^3.0.0"
-    jest-get-type "^25.2.6"
-    jest-util "^25.5.0"
-    pretty-format "^25.5.0"
+    "@jest/types" "^26.1.0"
+    chalk "^4.0.0"
+    jest-get-type "^26.0.0"
+    jest-util "^26.1.0"
+    pretty-format "^26.1.0"
 
-jest-environment-jsdom@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-environment-jsdom/-/jest-environment-jsdom-25.5.0.tgz#dcbe4da2ea997707997040ecf6e2560aec4e9834"
-  integrity sha1-3L5NouqZdweZcEDs9uJWCuxOmDQ=
+jest-environment-jsdom@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-environment-jsdom/-/jest-environment-jsdom-26.1.0.tgz#9dc7313ffe1b59761dad1fedb76e2503e5d37c5b"
+  integrity sha1-nccxP/4bWXYdrR/tt24lA+XTfFs=
   dependencies:
-    "@jest/environment" "^25.5.0"
-    "@jest/fake-timers" "^25.5.0"
-    "@jest/types" "^25.5.0"
-    jest-mock "^25.5.0"
-    jest-util "^25.5.0"
-    jsdom "^15.2.1"
+    "@jest/environment" "^26.1.0"
+    "@jest/fake-timers" "^26.1.0"
+    "@jest/types" "^26.1.0"
+    jest-mock "^26.1.0"
+    jest-util "^26.1.0"
+    jsdom "^16.2.2"
 
-jest-environment-node@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-environment-node/-/jest-environment-node-25.5.0.tgz#0f55270d94804902988e64adca37c6ce0f7d07a1"
-  integrity sha1-D1UnDZSASQKYjmStyjfGzg99B6E=
+jest-environment-node@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-environment-node/-/jest-environment-node-26.1.0.tgz#8bb387b3eefb132eab7826f9a808e4e05618960b"
+  integrity sha1-i7OHs+77Ey6reCb5qAjk4FYYlgs=
   dependencies:
-    "@jest/environment" "^25.5.0"
-    "@jest/fake-timers" "^25.5.0"
-    "@jest/types" "^25.5.0"
-    jest-mock "^25.5.0"
-    jest-util "^25.5.0"
-    semver "^6.3.0"
+    "@jest/environment" "^26.1.0"
+    "@jest/fake-timers" "^26.1.0"
+    "@jest/types" "^26.1.0"
+    jest-mock "^26.1.0"
+    jest-util "^26.1.0"
 
 jest-get-type@^25.2.6:
   version "25.2.6"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-get-type/-/jest-get-type-25.2.6.tgz#0b0a32fab8908b44d508be81681487dbabb8d877"
   integrity sha1-Cwoy+riQi0TVCL6BaBSH26u42Hc=
 
-jest-haste-map@^25.5.1:
-  version "25.5.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-haste-map/-/jest-haste-map-25.5.1.tgz#1df10f716c1d94e60a1ebf7798c9fb3da2620943"
-  integrity sha1-HfEPcWwdlOYKHr93mMn7PaJiCUM=
+jest-get-type@^26.0.0:
+  version "26.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-get-type/-/jest-get-type-26.0.0.tgz#381e986a718998dbfafcd5ec05934be538db4039"
+  integrity sha1-OB6YanGJmNv6/NXsBZNL5TjbQDk=
+
+jest-haste-map@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-haste-map/-/jest-haste-map-26.1.0.tgz#ef31209be73f09b0d9445e7d213e1b53d0d1476a"
+  integrity sha1-7zEgm+c/CbDZRF59IT4bU9DRR2o=
   dependencies:
-    "@jest/types" "^25.5.0"
+    "@jest/types" "^26.1.0"
     "@types/graceful-fs" "^4.1.2"
     anymatch "^3.0.3"
     fb-watchman "^2.0.0"
     graceful-fs "^4.2.4"
-    jest-serializer "^25.5.0"
-    jest-util "^25.5.0"
-    jest-worker "^25.5.0"
+    jest-serializer "^26.1.0"
+    jest-util "^26.1.0"
+    jest-worker "^26.1.0"
     micromatch "^4.0.2"
     sane "^4.0.3"
     walker "^1.0.7"
@@ -10037,38 +9972,38 @@ jest-haste-map@^25.5.1:
   optionalDependencies:
     fsevents "^2.1.2"
 
-jest-jasmine2@^25.5.4:
-  version "25.5.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-jasmine2/-/jest-jasmine2-25.5.4.tgz#66ca8b328fb1a3c5364816f8958f6970a8526968"
-  integrity sha1-ZsqLMo+xo8U2SBb4lY9pcKhSaWg=
+jest-jasmine2@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-jasmine2/-/jest-jasmine2-26.1.0.tgz#4dfe349b2b2d3c6b3a27c024fd4cb57ac0ed4b6f"
+  integrity sha1-Tf40mystPGs6J8Ak/Uy1esDtS28=
   dependencies:
     "@babel/traverse" "^7.1.0"
-    "@jest/environment" "^25.5.0"
-    "@jest/source-map" "^25.5.0"
-    "@jest/test-result" "^25.5.0"
-    "@jest/types" "^25.5.0"
-    chalk "^3.0.0"
+    "@jest/environment" "^26.1.0"
+    "@jest/source-map" "^26.1.0"
+    "@jest/test-result" "^26.1.0"
+    "@jest/types" "^26.1.0"
+    chalk "^4.0.0"
     co "^4.6.0"
-    expect "^25.5.0"
+    expect "^26.1.0"
     is-generator-fn "^2.0.0"
-    jest-each "^25.5.0"
-    jest-matcher-utils "^25.5.0"
-    jest-message-util "^25.5.0"
-    jest-runtime "^25.5.4"
-    jest-snapshot "^25.5.1"
-    jest-util "^25.5.0"
-    pretty-format "^25.5.0"
+    jest-each "^26.1.0"
+    jest-matcher-utils "^26.1.0"
+    jest-message-util "^26.1.0"
+    jest-runtime "^26.1.0"
+    jest-snapshot "^26.1.0"
+    jest-util "^26.1.0"
+    pretty-format "^26.1.0"
     throat "^5.0.0"
 
-jest-leak-detector@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-leak-detector/-/jest-leak-detector-25.5.0.tgz#2291c6294b0ce404241bb56fe60e2d0c3e34f0bb"
-  integrity sha1-IpHGKUsM5AQkG7Vv5g4tDD408Ls=
+jest-leak-detector@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-leak-detector/-/jest-leak-detector-26.1.0.tgz#039c3a07ebcd8adfa984b6ac015752c35792e0a6"
+  integrity sha1-A5w6B+vNit+phLasAVdSw1eS4KY=
   dependencies:
-    jest-get-type "^25.2.6"
-    pretty-format "^25.5.0"
+    jest-get-type "^26.0.0"
+    pretty-format "^26.1.0"
 
-jest-matcher-utils@^25.1.0, jest-matcher-utils@^25.5.0:
+jest-matcher-utils@^25.1.0:
   version "25.5.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-matcher-utils/-/jest-matcher-utils-25.5.0.tgz#fbc98a12d730e5d2453d7f1ed4a4d948e34b7867"
   integrity sha1-+8mKEtcw5dJFPX8e1KTZSONLeGc=
@@ -10078,180 +10013,189 @@ jest-matcher-utils@^25.1.0, jest-matcher-utils@^25.5.0:
     jest-get-type "^25.2.6"
     pretty-format "^25.5.0"
 
-jest-message-util@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-message-util/-/jest-message-util-25.5.0.tgz#ea11d93204cc7ae97456e1d8716251185b8880ea"
-  integrity sha1-6hHZMgTMeul0VuHYcWJRGFuIgOo=
+jest-matcher-utils@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-matcher-utils/-/jest-matcher-utils-26.1.0.tgz#cf75a41bd413dda784f022de5a65a2a5c73a5c92"
+  integrity sha1-z3WkG9QT3aeE8CLeWmWipcc6XJI=
+  dependencies:
+    chalk "^4.0.0"
+    jest-diff "^26.1.0"
+    jest-get-type "^26.0.0"
+    pretty-format "^26.1.0"
+
+jest-message-util@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-message-util/-/jest-message-util-26.1.0.tgz#52573fbb8f5cea443c4d1747804d7a238a3e233c"
+  integrity sha1-Ulc/u49c6kQ8TRdHgE16I4o+Izw=
   dependencies:
     "@babel/code-frame" "^7.0.0"
-    "@jest/types" "^25.5.0"
+    "@jest/types" "^26.1.0"
     "@types/stack-utils" "^1.0.1"
-    chalk "^3.0.0"
+    chalk "^4.0.0"
     graceful-fs "^4.2.4"
     micromatch "^4.0.2"
     slash "^3.0.0"
-    stack-utils "^1.0.1"
+    stack-utils "^2.0.2"
 
-jest-mock@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-mock/-/jest-mock-25.5.0.tgz#a91a54dabd14e37ecd61665d6b6e06360a55387a"
-  integrity sha1-qRpU2r0U437NYWZda24GNgpVOHo=
+jest-mock@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-mock/-/jest-mock-26.1.0.tgz#80d8286da1f05a345fbad1bfd6fa49a899465d3d"
+  integrity sha1-gNgobaHwWjRfutG/1vpJqJlGXT0=
   dependencies:
-    "@jest/types" "^25.5.0"
+    "@jest/types" "^26.1.0"
 
 jest-pnp-resolver@^1.2.1:
   version "1.2.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-pnp-resolver/-/jest-pnp-resolver-1.2.2.tgz#b704ac0ae028a89108a4d040b3f919dfddc8e33c"
   integrity sha1-twSsCuAoqJEIpNBAs/kZ393I4zw=
 
-jest-regex-util@^25.2.6:
-  version "25.2.6"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-regex-util/-/jest-regex-util-25.2.6.tgz#d847d38ba15d2118d3b06390056028d0f2fd3964"
-  integrity sha1-2EfTi6FdIRjTsGOQBWAo0PL9OWQ=
+jest-regex-util@^26.0.0:
+  version "26.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-regex-util/-/jest-regex-util-26.0.0.tgz#d25e7184b36e39fd466c3bc41be0971e821fee28"
+  integrity sha1-0l5xhLNuOf1GbDvEG+CXHoIf7ig=
 
-jest-resolve-dependencies@^25.5.4:
-  version "25.5.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-resolve-dependencies/-/jest-resolve-dependencies-25.5.4.tgz#85501f53957c8e3be446e863a74777b5a17397a7"
-  integrity sha1-hVAfU5V8jjvkRuhjp0d3taFzl6c=
+jest-resolve-dependencies@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-resolve-dependencies/-/jest-resolve-dependencies-26.1.0.tgz#1ce36472f864a5dadf7dc82fa158e1c77955691b"
+  integrity sha1-HONkcvhkpdrffcgvoVjhx3lVaRs=
   dependencies:
-    "@jest/types" "^25.5.0"
-    jest-regex-util "^25.2.6"
-    jest-snapshot "^25.5.1"
+    "@jest/types" "^26.1.0"
+    jest-regex-util "^26.0.0"
+    jest-snapshot "^26.1.0"
 
-jest-resolve@^25.5.1:
-  version "25.5.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-resolve/-/jest-resolve-25.5.1.tgz#0e6fbcfa7c26d2a5fe8f456088dc332a79266829"
-  integrity sha1-Dm+8+nwm0qX+j0VgiNwzKnkmaCk=
+jest-resolve@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-resolve/-/jest-resolve-26.1.0.tgz#a530eaa302b1f6fa0479079d1561dd69abc00e68"
+  integrity sha1-pTDqowKx9voEeQedFWHdaavADmg=
   dependencies:
-    "@jest/types" "^25.5.0"
-    browser-resolve "^1.11.3"
-    chalk "^3.0.0"
+    "@jest/types" "^26.1.0"
+    chalk "^4.0.0"
     graceful-fs "^4.2.4"
     jest-pnp-resolver "^1.2.1"
+    jest-util "^26.1.0"
     read-pkg-up "^7.0.1"
-    realpath-native "^2.0.0"
     resolve "^1.17.0"
     slash "^3.0.0"
 
-jest-runner@^25.5.4:
-  version "25.5.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-runner/-/jest-runner-25.5.4.tgz#ffec5df3875da5f5c878ae6d0a17b8e4ecd7c71d"
-  integrity sha1-/+xd84ddpfXIeK5tChe45OzXxx0=
+jest-runner@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-runner/-/jest-runner-26.1.0.tgz#457f7fc522afe46ca6db1dccf19f87f500b3288d"
+  integrity sha1-RX9/xSKv5Gym2x3M8Z+H9QCzKI0=
   dependencies:
-    "@jest/console" "^25.5.0"
-    "@jest/environment" "^25.5.0"
-    "@jest/test-result" "^25.5.0"
-    "@jest/types" "^25.5.0"
-    chalk "^3.0.0"
+    "@jest/console" "^26.1.0"
+    "@jest/environment" "^26.1.0"
+    "@jest/test-result" "^26.1.0"
+    "@jest/types" "^26.1.0"
+    chalk "^4.0.0"
     exit "^0.1.2"
     graceful-fs "^4.2.4"
-    jest-config "^25.5.4"
-    jest-docblock "^25.3.0"
-    jest-haste-map "^25.5.1"
-    jest-jasmine2 "^25.5.4"
-    jest-leak-detector "^25.5.0"
-    jest-message-util "^25.5.0"
-    jest-resolve "^25.5.1"
-    jest-runtime "^25.5.4"
-    jest-util "^25.5.0"
-    jest-worker "^25.5.0"
+    jest-config "^26.1.0"
+    jest-docblock "^26.0.0"
+    jest-haste-map "^26.1.0"
+    jest-jasmine2 "^26.1.0"
+    jest-leak-detector "^26.1.0"
+    jest-message-util "^26.1.0"
+    jest-resolve "^26.1.0"
+    jest-runtime "^26.1.0"
+    jest-util "^26.1.0"
+    jest-worker "^26.1.0"
     source-map-support "^0.5.6"
     throat "^5.0.0"
 
-jest-runtime@^25.5.4:
-  version "25.5.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-runtime/-/jest-runtime-25.5.4.tgz#dc981fe2cb2137abcd319e74ccae7f7eeffbfaab"
-  integrity sha1-3Jgf4sshN6vNMZ50zK5/fu/7+qs=
+jest-runtime@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-runtime/-/jest-runtime-26.1.0.tgz#45a37af42115f123ed5c51f126c05502da2469cb"
+  integrity sha1-RaN69CEV8SPtXFHxJsBVAtokacs=
   dependencies:
-    "@jest/console" "^25.5.0"
-    "@jest/environment" "^25.5.0"
-    "@jest/globals" "^25.5.2"
-    "@jest/source-map" "^25.5.0"
-    "@jest/test-result" "^25.5.0"
-    "@jest/transform" "^25.5.1"
-    "@jest/types" "^25.5.0"
+    "@jest/console" "^26.1.0"
+    "@jest/environment" "^26.1.0"
+    "@jest/fake-timers" "^26.1.0"
+    "@jest/globals" "^26.1.0"
+    "@jest/source-map" "^26.1.0"
+    "@jest/test-result" "^26.1.0"
+    "@jest/transform" "^26.1.0"
+    "@jest/types" "^26.1.0"
     "@types/yargs" "^15.0.0"
-    chalk "^3.0.0"
+    chalk "^4.0.0"
     collect-v8-coverage "^1.0.0"
     exit "^0.1.2"
     glob "^7.1.3"
     graceful-fs "^4.2.4"
-    jest-config "^25.5.4"
-    jest-haste-map "^25.5.1"
-    jest-message-util "^25.5.0"
-    jest-mock "^25.5.0"
-    jest-regex-util "^25.2.6"
-    jest-resolve "^25.5.1"
-    jest-snapshot "^25.5.1"
-    jest-util "^25.5.0"
-    jest-validate "^25.5.0"
-    realpath-native "^2.0.0"
+    jest-config "^26.1.0"
+    jest-haste-map "^26.1.0"
+    jest-message-util "^26.1.0"
+    jest-mock "^26.1.0"
+    jest-regex-util "^26.0.0"
+    jest-resolve "^26.1.0"
+    jest-snapshot "^26.1.0"
+    jest-util "^26.1.0"
+    jest-validate "^26.1.0"
     slash "^3.0.0"
     strip-bom "^4.0.0"
     yargs "^15.3.1"
 
-jest-serializer@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-serializer/-/jest-serializer-25.5.0.tgz#a993f484e769b4ed54e70e0efdb74007f503072b"
-  integrity sha1-qZP0hOdptO1U5w4O/bdAB/UDBys=
+jest-serializer@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-serializer/-/jest-serializer-26.1.0.tgz#72a394531fc9b08e173dc7d297440ac610d95022"
+  integrity sha1-cqOUUx/JsI4XPcfSl0QKxhDZUCI=
   dependencies:
     graceful-fs "^4.2.4"
 
-jest-snapshot@^25.5.1:
-  version "25.5.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-snapshot/-/jest-snapshot-25.5.1.tgz#1a2a576491f9961eb8d00c2e5fd479bc28e5ff7f"
-  integrity sha1-GipXZJH5lh640AwuX9R5vCjl/38=
+jest-snapshot@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-snapshot/-/jest-snapshot-26.1.0.tgz#c36ed1e0334bd7bd2fe5ad07e93a364ead7e1349"
+  integrity sha1-w27R4DNL170v5a0H6To2Tq1+E0k=
   dependencies:
     "@babel/types" "^7.0.0"
-    "@jest/types" "^25.5.0"
-    "@types/prettier" "^1.19.0"
-    chalk "^3.0.0"
-    expect "^25.5.0"
+    "@jest/types" "^26.1.0"
+    "@types/prettier" "^2.0.0"
+    chalk "^4.0.0"
+    expect "^26.1.0"
     graceful-fs "^4.2.4"
-    jest-diff "^25.5.0"
-    jest-get-type "^25.2.6"
-    jest-matcher-utils "^25.5.0"
-    jest-message-util "^25.5.0"
-    jest-resolve "^25.5.1"
-    make-dir "^3.0.0"
+    jest-diff "^26.1.0"
+    jest-get-type "^26.0.0"
+    jest-haste-map "^26.1.0"
+    jest-matcher-utils "^26.1.0"
+    jest-message-util "^26.1.0"
+    jest-resolve "^26.1.0"
     natural-compare "^1.4.0"
-    pretty-format "^25.5.0"
-    semver "^6.3.0"
+    pretty-format "^26.1.0"
+    semver "^7.3.2"
 
-jest-util@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-util/-/jest-util-25.5.0.tgz#31c63b5d6e901274d264a4fec849230aa3fa35b0"
-  integrity sha1-McY7XW6QEnTSZKT+yEkjCqP6NbA=
+jest-util@26.x, jest-util@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-util/-/jest-util-26.1.0.tgz#80e85d4ba820decacf41a691c2042d5276e5d8d8"
+  integrity sha1-gOhdS6gg3srPQaaRwgQtUnbl2Ng=
   dependencies:
-    "@jest/types" "^25.5.0"
-    chalk "^3.0.0"
+    "@jest/types" "^26.1.0"
+    chalk "^4.0.0"
     graceful-fs "^4.2.4"
     is-ci "^2.0.0"
-    make-dir "^3.0.0"
+    micromatch "^4.0.2"
 
-jest-validate@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-validate/-/jest-validate-25.5.0.tgz#fb4c93f332c2e4cf70151a628e58a35e459a413a"
-  integrity sha1-+0yT8zLC5M9wFRpijlijXkWaQTo=
+jest-validate@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-validate/-/jest-validate-26.1.0.tgz#942c85ad3d60f78250c488a7f85d8f11a29788e7"
+  integrity sha1-lCyFrT1g94JQxIin+F2PEaKXiOc=
   dependencies:
-    "@jest/types" "^25.5.0"
-    camelcase "^5.3.1"
-    chalk "^3.0.0"
-    jest-get-type "^25.2.6"
+    "@jest/types" "^26.1.0"
+    camelcase "^6.0.0"
+    chalk "^4.0.0"
+    jest-get-type "^26.0.0"
     leven "^3.1.0"
-    pretty-format "^25.5.0"
+    pretty-format "^26.1.0"
 
-jest-watcher@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-watcher/-/jest-watcher-25.5.0.tgz#d6110d101df98badebe435003956fd4a465e8456"
-  integrity sha1-1hENEB35i63r5DUAOVb9SkZehFY=
+jest-watcher@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-watcher/-/jest-watcher-26.1.0.tgz#99812a0cd931f0cb3d153180426135ab83e4d8f2"
+  integrity sha1-mYEqDNkx8Ms9FTGAQmE1q4Pk2PI=
   dependencies:
-    "@jest/test-result" "^25.5.0"
-    "@jest/types" "^25.5.0"
+    "@jest/test-result" "^26.1.0"
+    "@jest/types" "^26.1.0"
     ansi-escapes "^4.2.1"
-    chalk "^3.0.0"
-    jest-util "^25.5.0"
-    string-length "^3.1.0"
+    chalk "^4.0.0"
+    jest-util "^26.1.0"
+    string-length "^4.0.1"
 
 jest-worker@25.1.0:
   version "25.1.0"
@@ -10269,22 +10213,22 @@ jest-worker@^24.9.0:
     merge-stream "^2.0.0"
     supports-color "^6.1.0"
 
-jest-worker@^25.5.0:
-  version "25.5.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-worker/-/jest-worker-25.5.0.tgz#2611d071b79cea0f43ee57a3d118593ac1547db1"
-  integrity sha1-JhHQcbec6g9D7lej0RhZOsFUfbE=
+jest-worker@^26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest-worker/-/jest-worker-26.1.0.tgz#65d5641af74e08ccd561c240e7db61284f82f33d"
+  integrity sha1-ZdVkGvdOCMzVYcJA59thKE+C8z0=
   dependencies:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jest@25.2.3:
-  version "25.2.3"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest/-/jest-25.2.3.tgz#0cc9b35192f236fe1d5e76ed8eb3a54e7e0ee2e0"
-  integrity sha1-DMmzUZLyNv4dXnbtjrOlTn4O4uA=
+jest@26.1.0:
+  version "26.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jest/-/jest-26.1.0.tgz#2f3aa7bcffb9bfd025473f83bbbf46a3af026263"
+  integrity sha1-LzqnvP+5v9AlRz+Du79Go68CYmM=
   dependencies:
-    "@jest/core" "^25.2.3"
+    "@jest/core" "^26.1.0"
     import-local "^3.0.2"
-    jest-cli "^25.2.3"
+    jest-cli "^26.1.0"
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -10314,36 +10258,36 @@ jsck@^0.3.2:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jsck/-/jsck-0.3.2.tgz#8e06b31bb57b0090e503dd4ee6ad0f269dff1a55"
   integrity sha1-jgazG7V7AJDlA91O5q0PJp3/GlU=
 
-jsdom@^15.2.1:
-  version "15.2.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jsdom/-/jsdom-15.2.1.tgz#d2feb1aef7183f86be521b8c6833ff5296d07ec5"
-  integrity sha1-0v6xrvcYP4a+UhuMaDP/UpbQfsU=
+jsdom@^16.2.2:
+  version "16.3.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jsdom/-/jsdom-16.3.0.tgz#75690b7dac36c67be49c336dcd7219bbbed0810c"
+  integrity sha1-dWkLfaw2xnvknDNtzXIZu77QgQw=
   dependencies:
-    abab "^2.0.0"
-    acorn "^7.1.0"
-    acorn-globals "^4.3.2"
-    array-equal "^1.0.0"
-    cssom "^0.4.1"
-    cssstyle "^2.0.0"
-    data-urls "^1.1.0"
-    domexception "^1.0.1"
-    escodegen "^1.11.1"
-    html-encoding-sniffer "^1.0.2"
+    abab "^2.0.3"
+    acorn "^7.1.1"
+    acorn-globals "^6.0.0"
+    cssom "^0.4.4"
+    cssstyle "^2.2.0"
+    data-urls "^2.0.0"
+    decimal.js "^10.2.0"
+    domexception "^2.0.1"
+    escodegen "^1.14.1"
+    html-encoding-sniffer "^2.0.1"
+    is-potential-custom-element-name "^1.0.0"
     nwsapi "^2.2.0"
-    parse5 "5.1.0"
-    pn "^1.1.0"
-    request "^2.88.0"
-    request-promise-native "^1.0.7"
-    saxes "^3.1.9"
-    symbol-tree "^3.2.2"
+    parse5 "5.1.1"
+    request "^2.88.2"
+    request-promise-native "^1.0.8"
+    saxes "^5.0.0"
+    symbol-tree "^3.2.4"
     tough-cookie "^3.0.1"
-    w3c-hr-time "^1.0.1"
-    w3c-xmlserializer "^1.1.2"
-    webidl-conversions "^4.0.2"
+    w3c-hr-time "^1.0.2"
+    w3c-xmlserializer "^2.0.0"
+    webidl-conversions "^6.1.0"
     whatwg-encoding "^1.0.5"
     whatwg-mimetype "^2.3.0"
-    whatwg-url "^7.0.0"
-    ws "^7.0.0"
+    whatwg-url "^8.0.0"
+    ws "^7.2.3"
     xml-name-validator "^3.0.0"
 
 jsesc@^2.5.1:
@@ -10445,7 +10389,7 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-jsx-ast-utils@^2.2.3, jsx-ast-utils@^2.4.1:
+jsx-ast-utils@^2.4.1:
   version "2.4.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/jsx-ast-utils/-/jsx-ast-utils-2.4.1.tgz#1114a4c1209481db06c690c2b4f488cc665f657e"
   integrity sha1-ERSkwSCUgdsGxpDCtPSIzGZfZX4=
@@ -10580,7 +10524,15 @@ levenary@^1.1.1:
   dependencies:
     leven "^3.1.0"
 
-levn@^0.3.0, levn@~0.3.0:
+levn@^0.4.1:
+  version "0.4.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/levn/-/levn-0.4.1.tgz#ae4562c007473b932a6200d403268dd2fffc6ade"
+  integrity sha1-rkViwAdHO5MqYgDUAyaN0v/8at4=
+  dependencies:
+    prelude-ls "^1.2.1"
+    type-check "~0.4.0"
+
+levn@~0.3.0:
   version "0.3.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/levn/-/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"
   integrity sha1-OwmSTt+fCDwEkP3UwLxEIeBHZO4=
@@ -10596,10 +10548,10 @@ license-webpack-plugin@2.1.2:
     "@types/webpack-sources" "^0.1.5"
     webpack-sources "^1.2.0"
 
-lightercollective@^0.1.0:
-  version "0.1.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/lightercollective/-/lightercollective-0.1.0.tgz#70df102c530dcb8d0ccabfe6175a8d00d5f61300"
-  integrity sha1-cN8QLFMNy40Myr/mF1qNANX2EwA=
+lightercollective@^0.3.0:
+  version "0.3.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/lightercollective/-/lightercollective-0.3.0.tgz#1f07638642ec645d70bdb69ab2777676f35a28f0"
+  integrity sha1-HwdjhkLsZF1wvbaasnd2dvNaKPA=
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
@@ -10826,7 +10778,7 @@ lodash.xorby@^4.7.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/lodash.xorby/-/lodash.xorby-4.7.0.tgz#9c19a6f9f063a6eb53dd03c1b6871799801463d7"
   integrity sha1-nBmm+fBjputT3QPBtocXmYAUY9c=
 
-lodash@4.17.19, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.16, lodash@^4.17.19, lodash@^4.17.5, lodash@~4.17.10:
+lodash@4.17.19, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.5, lodash@~4.17.10:
   version "4.17.19"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha1-5I3e2+MLMyF4PFtDAfvTU7weSks=
@@ -10865,13 +10817,6 @@ loglevel@^1.6.1, loglevel@^1.6.4, loglevel@^1.6.7:
   version "1.6.8"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/loglevel/-/loglevel-1.6.8.tgz#8a25fb75d092230ecd4457270d80b54e28011171"
   integrity sha1-iiX7ddCSIw7NRFcnDYC1TigBEXE=
-
-lolex@^5.0.0:
-  version "5.1.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/lolex/-/lolex-5.1.2.tgz#953694d098ce7c07bc5ed6d0e42bc6c0c6d5a367"
-  integrity sha1-lTaU0JjOfAe8XtbQ5CvGwMbVo2c=
-  dependencies:
-    "@sinonjs/commons" "^1.7.0"
 
 long@^4.0.0:
   version "4.0.0"
@@ -11354,14 +11299,14 @@ mixin-object@^2.0.1:
     for-in "^0.1.3"
     is-extendable "^0.1.1"
 
-mkdirp@0.5.5, mkdirp@0.5.x, mkdirp@0.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@^0.5.4, mkdirp@~0.5.1:
+mkdirp@0.5.5, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@^0.5.4, mkdirp@~0.5.1:
   version "0.5.5"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/mkdirp/-/mkdirp-0.5.5.tgz#d91cefd62d1436ca0f41620e251288d420099def"
   integrity sha1-2Rzv1i0UNsoPQWIOJRKI1CAJne8=
   dependencies:
     minimist "^1.2.5"
 
-mkdirp@^1.0.3, mkdirp@^1.0.4:
+mkdirp@1.x, mkdirp@^1.0.3, mkdirp@^1.0.4:
   version "1.0.4"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha1-PrXtYmInVteaXw4qIh3+utdcL34=
@@ -11651,16 +11596,17 @@ node-modules-regexp@^1.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/node-modules-regexp/-/node-modules-regexp-1.0.0.tgz#8d9dbe28964a4ac5712e9131642107c71e90ec40"
   integrity sha1-jZ2+KJZKSsVxLpExZCEHxx6Q7EA=
 
-node-notifier@^6.0.0:
-  version "6.0.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/node-notifier/-/node-notifier-6.0.0.tgz#cea319e06baa16deec8ce5cd7f133c4a46b68e12"
-  integrity sha1-zqMZ4GuqFt7sjOXNfxM8Ska2jhI=
+node-notifier@^7.0.0:
+  version "7.0.2"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/node-notifier/-/node-notifier-7.0.2.tgz#3a70b1b70aca5e919d0b1b022530697466d9c675"
+  integrity sha1-OnCxtwrKXpGdCxsCJTBpdGbZxnU=
   dependencies:
     growly "^1.3.0"
-    is-wsl "^2.1.1"
-    semver "^6.3.0"
+    is-wsl "^2.2.0"
+    semver "^7.3.2"
     shellwords "^0.1.1"
-    which "^1.3.1"
+    uuid "^8.2.0"
+    which "^2.0.2"
 
 node-pre-gyp@^0.11.0:
   version "0.11.0"
@@ -11988,7 +11934,7 @@ object.assign@^4.1.0:
     has-symbols "^1.0.0"
     object-keys "^1.0.11"
 
-object.entries@^1.1.1, object.entries@^1.1.2:
+object.entries@^1.1.2:
   version "1.1.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/object.entries/-/object.entries-1.1.2.tgz#bc73f00acb6b6bb16c203434b10f9a7e797d3add"
   integrity sha1-vHPwCstra7FsIDQ0sQ+afnl9Ot0=
@@ -12108,7 +12054,7 @@ optional@0.1.4:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/optional/-/optional-0.1.4.tgz#cdb1a9bedc737d2025f690ceeb50e049444fd5b3"
   integrity sha1-zbGpvtxzfSAl9pDO61DgSURP1bM=
 
-optionator@^0.8.1, optionator@^0.8.3:
+optionator@^0.8.1:
   version "0.8.3"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/optionator/-/optionator-0.8.3.tgz#84fa1d036fe9d3c7e21d99884b601167ec8fb495"
   integrity sha1-hPodA2/p08fiHZmIS2ARZ+yPtJU=
@@ -12119,6 +12065,18 @@ optionator@^0.8.1, optionator@^0.8.3:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
     word-wrap "~1.2.3"
+
+optionator@^0.9.1:
+  version "0.9.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/optionator/-/optionator-0.9.1.tgz#4f236a6373dae0566a6d43e1326674f50c291499"
+  integrity sha1-TyNqY3Pa4FZqbUPhMmZ09QwpFJk=
+  dependencies:
+    deep-is "^0.1.3"
+    fast-levenshtein "^2.0.6"
+    levn "^0.4.1"
+    prelude-ls "^1.2.1"
+    type-check "^0.4.0"
+    word-wrap "^1.2.3"
 
 ora@4.0.3:
   version "4.0.3"
@@ -12216,11 +12174,6 @@ p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
   integrity sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=
-
-p-finally@^2.0.0:
-  version "2.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/p-finally/-/p-finally-2.0.1.tgz#bd6fcaa9c559a096b680806f4d657b3f0f240561"
-  integrity sha1-vW/KqcVZoJa2gIBvTWV7Pw8kBWE=
 
 p-is-promise@^2.0.0:
   version "2.1.0"
@@ -12456,10 +12409,10 @@ parse5@4.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
   integrity sha1-bXhlbj2o14tOwLkG98CO8d/j9gg=
 
-parse5@5.1.0:
-  version "5.1.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/parse5/-/parse5-5.1.0.tgz#c59341c9723f414c452975564c7c00a68d58acd2"
-  integrity sha1-xZNByXI/QUxFKXVWTHwApo1YrNI=
+parse5@5.1.1, parse5@^5.1.1:
+  version "5.1.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha1-9o5OW6GFKsLK3AD0VV//bCq7YXg=
 
 parse5@^3.0.1:
   version "3.0.3"
@@ -12467,11 +12420,6 @@ parse5@^3.0.1:
   integrity sha1-BC95L/3TaFFVHPTp4Gazh0q0W1w=
   dependencies:
     "@types/node" "*"
-
-parse5@^5.1.1:
-  version "5.1.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
-  integrity sha1-9o5OW6GFKsLK3AD0VV//bCq7YXg=
 
 parseqs@0.0.5:
   version "0.0.5"
@@ -12705,11 +12653,6 @@ pkg-dir@^4.1.0, pkg-dir@^4.2.0:
   integrity sha1-8JkTPfft5CLoHR2ESCcO6z5CYfM=
   dependencies:
     find-up "^4.0.0"
-
-pn@^1.1.0:
-  version "1.1.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
-  integrity sha1-4vTO8OIZ9GPBeas3Rj5OHs3Muvs=
 
 polished@^3.6.5:
   version "3.6.5"
@@ -13146,6 +13089,11 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.2
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+prelude-ls@^1.2.1:
+  version "1.2.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
+  integrity sha1-3rxkidem5rDnYRiIzsiAM30xY5Y=
+
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
@@ -13161,17 +13109,17 @@ present@^0.0.3:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/present/-/present-0.0.3.tgz#5aefb8a5ddf6b34c65743bf1cde53523aac1c05a"
   integrity sha1-Wu+4pd32s0xldDvxzeU1I6rBwFo=
 
-prettier@2.0.4:
-  version "2.0.4"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/prettier/-/prettier-2.0.4.tgz#2d1bae173e355996ee355ec9830a7a1ee05457ef"
-  integrity sha1-LRuuFz41WZbuNV7Jgwp6HuBUV+8=
+prettier@2.0.5:
+  version "2.0.5"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
+  integrity sha1-1tVigkVSQ/L5LMFxZpLAiqMVItQ=
 
 pretty-bytes@5.3.0:
   version "5.3.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/pretty-bytes/-/pretty-bytes-5.3.0.tgz#f2849e27db79fb4d6cfe24764fc4134f165989f2"
   integrity sha1-8oSeJ9t5+01s/iR2T8QTTxZZifI=
 
-pretty-format@^25.1.0, pretty-format@^25.2.1, pretty-format@^25.5.0:
+pretty-format@^25.2.1, pretty-format@^25.5.0:
   version "25.5.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/pretty-format/-/pretty-format-25.5.0.tgz#7873c1d774f682c34b8d48b6743a2bf2ac55791a"
   integrity sha1-eHPB13T2gsNLjUi2dDor8qxVeRo=
@@ -13181,7 +13129,7 @@ pretty-format@^25.1.0, pretty-format@^25.2.1, pretty-format@^25.5.0:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
-pretty-format@^26.0.0:
+pretty-format@^26.0.0, pretty-format@^26.1.0:
   version "26.1.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/pretty-format/-/pretty-format-26.1.0.tgz#272b9cd1f1a924ab5d443dc224899d7a65cb96ec"
   integrity sha1-Jyuc0fGpJKtdRD3CJImdemXLluw=
@@ -13620,11 +13568,6 @@ readdirp@~3.4.0:
   dependencies:
     picomatch "^2.2.1"
 
-realpath-native@^2.0.0:
-  version "2.0.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/realpath-native/-/realpath-native-2.0.0.tgz#7377ac429b6e1fd599dc38d08ed942d0d7beb866"
-  integrity sha1-c3esQptuH9WZ3DjQjtlC0Ne+uGY=
-
 recast@^0.19.0:
   version "0.19.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/recast/-/recast-0.19.1.tgz#555f3612a5a10c9f44b9a923875c51ff775de6c8"
@@ -13707,12 +13650,7 @@ regexp.prototype.flags@^1.2.0, regexp.prototype.flags@^1.3.0:
     define-properties "^1.1.3"
     es-abstract "^1.17.0-next.1"
 
-regexpp@^2.0.1:
-  version "2.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
-  integrity sha1-jRnTHPYySCtYkEn4KB+T28uk0H8=
-
-regexpp@^3.0.0:
+regexpp@^3.0.0, regexpp@^3.1.0:
   version "3.1.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/regexpp/-/regexpp-3.1.0.tgz#206d0ad0a5648cffbdb8ae46438f3dc51c9f78e2"
   integrity sha1-IG0K0KVkjP+9uK5GQ489xRyfeOI=
@@ -13808,23 +13746,23 @@ request-progress@3.0.0:
   dependencies:
     throttleit "^1.0.0"
 
-request-promise-core@1.1.3:
-  version "1.1.3"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/request-promise-core/-/request-promise-core-1.1.3.tgz#e9a3c081b51380dfea677336061fea879a829ee9"
-  integrity sha1-6aPAgbUTgN/qZ3M2Bh/qh5qCnuk=
+request-promise-core@1.1.4:
+  version "1.1.4"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/request-promise-core/-/request-promise-core-1.1.4.tgz#3eedd4223208d419867b78ce815167d10593a22f"
+  integrity sha1-Pu3UIjII1BmGe3jOgVFn0QWToi8=
   dependencies:
-    lodash "^4.17.15"
+    lodash "^4.17.19"
 
-request-promise-native@^1.0.7:
-  version "1.0.8"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/request-promise-native/-/request-promise-native-1.0.8.tgz#a455b960b826e44e2bf8999af64dff2bfe58cb36"
-  integrity sha1-pFW5YLgm5E4r+Jma9k3/K/5YyzY=
+request-promise-native@^1.0.8:
+  version "1.0.9"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/request-promise-native/-/request-promise-native-1.0.9.tgz#e407120526a5efdc9a39b28a5679bf47b9d9dc28"
+  integrity sha1-5AcSBSal79yaObKKVnm/R7nZ3Cg=
   dependencies:
-    request-promise-core "1.1.3"
+    request-promise-core "1.1.4"
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
-request@^2.83.0, request@^2.87.0, request@^2.88.0:
+request@^2.83.0, request@^2.87.0, request@^2.88.0, request@^2.88.2:
   version "2.88.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha1-1zyRhzHLWofaBH4gcjQUb2ZNErM=
@@ -13914,11 +13852,6 @@ resolve-url@^0.2.1:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
-resolve@1.1.7:
-  version "1.1.7"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
-  integrity sha1-IDEU2CrSxe2ejgQRs5ModeiJ6Xs=
-
 resolve@1.15.1:
   version "1.15.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/resolve/-/resolve-1.15.1.tgz#27bdcdeffeaf2d6244b95bb0f9f4b4653451f3e8"
@@ -13926,7 +13859,7 @@ resolve@1.15.1:
   dependencies:
     path-parse "^1.0.6"
 
-resolve@1.x, resolve@^1.1.6, resolve@^1.1.7, resolve@^1.10.0, resolve@^1.11.0, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.15.1, resolve@^1.16.1, resolve@^1.17.0, resolve@^1.3.2:
+resolve@^1.1.6, resolve@^1.1.7, resolve@^1.10.0, resolve@^1.11.0, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.16.1, resolve@^1.17.0, resolve@^1.3.2:
   version "1.17.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/resolve/-/resolve-1.17.0.tgz#b25941b54968231cc2d1bb76a79cb7f2c0bf8444"
   integrity sha1-sllBtUloIxzC0bt2p5y38sC/hEQ=
@@ -14103,7 +14036,7 @@ rsvp@^4.8.4:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/rsvp/-/rsvp-4.8.5.tgz#c8f155311d167f68f21e168df71ec5b083113734"
   integrity sha1-yPFVMR0Wf2jyHhaN9x7FsIMRNzQ=
 
-run-async@^2.2.0, run-async@^2.4.0:
+run-async@^2.2.0:
   version "2.4.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/run-async/-/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
   integrity sha1-hEDsz5nqPnC9QJ1JqriOEMGJpFU=
@@ -14127,14 +14060,14 @@ rxjs@6.5.4:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@6.5.5, rxjs@~6.5.5:
+rxjs@6.5.5:
   version "6.5.5"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/rxjs/-/rxjs-6.5.5.tgz#c5c884e3094c8cfee31bf27eb87e54ccfc87f9ec"
   integrity sha1-xciE4wlMjP7jG/J+uH5UzPyH+ew=
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^6.3.3, rxjs@^6.4.0, rxjs@^6.5.4, rxjs@^6.6.0:
+rxjs@^6.3.3, rxjs@^6.4.0, rxjs@^6.5.4, rxjs@~6.6.0:
   version "6.6.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/rxjs/-/rxjs-6.6.0.tgz#af2901eedf02e3a83ffa7f886240ff9018bbec84"
   integrity sha1-rykB7t8C46g/+n+IYkD/kBi77IQ=
@@ -14211,12 +14144,12 @@ sax@>=0.6.0, sax@^1.2.4, sax@~1.2.4:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha1-KBYjTiN4vdxOU1T6tcqold9xANk=
 
-saxes@^3.1.9:
-  version "3.1.11"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/saxes/-/saxes-3.1.11.tgz#d59d1fd332ec92ad98a2e0b2ee644702384b1c5b"
-  integrity sha1-1Z0f0zLskq2YouCy7mRHAjhLHFs=
+saxes@^5.0.0:
+  version "5.0.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/saxes/-/saxes-5.0.1.tgz#eebab953fa3b7608dbe94e5dadb15c888fa6696d"
+  integrity sha1-7rq5U/o7dgjb6U5drbFciI+maW0=
   dependencies:
-    xmlchars "^2.1.1"
+    xmlchars "^2.2.0"
 
 scheduler@^0.19.1:
   version "0.19.1"
@@ -14263,7 +14196,7 @@ semver-diff@^2.0.0:
   dependencies:
     semver "^5.0.3"
 
-"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5, semver@^5.5.0, semver@^5.6.0, semver@^5.7.1:
+"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.6.0, semver@^5.7.1:
   version "5.7.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha1-qVT5Ma66UI0we78Gnv8MAclhFvc=
@@ -14273,7 +14206,7 @@ semver@5.4.1:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/semver/-/semver-5.4.1.tgz#e059c09d8571f0540823733433505d3a2f00b18e"
   integrity sha1-4FnAnYVx8FQII3M0M1BdOi8AsY4=
 
-semver@6.3.0, semver@^6.0.0, semver@^6.1.2, semver@^6.3.0:
+semver@6.3.0, semver@^6.0.0, semver@^6.3.0:
   version "6.3.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0=
@@ -14283,7 +14216,7 @@ semver@7.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha1-XzyjV2HkfgWyBsba/yz4FPAxa44=
 
-semver@^7.0.0, semver@^7.1.1, semver@^7.3.2:
+semver@7.x, semver@^7.0.0, semver@^7.1.1, semver@^7.2.1, semver@^7.3.2:
   version "7.3.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/semver/-/semver-7.3.2.tgz#604962b052b81ed0786aae84389ffba70ffd3938"
   integrity sha1-YElisFK4HtB4aq6EOJ/7pw/9OTg=
@@ -14476,15 +14409,6 @@ signedsource@^1.0.0:
   version "1.0.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/signedsource/-/signedsource-1.0.0.tgz#1ddace4981798f93bd833973803d80d52e93ad6a"
   integrity sha1-HdrOSYF5j5O9gzlzgD2A1S6TrWo=
-
-simple-git@2.12.0:
-  version "2.12.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/simple-git/-/simple-git-2.12.0.tgz#b5978ec12cd56883185ef1475ec62e9207c1e1dc"
-  integrity sha1-tZeOwSzVaIMYXvFHXsYukgfB4dw=
-  dependencies:
-    "@kwsites/file-exists" "^1.1.1"
-    "@kwsites/promise-deferred" "^1.0.1"
-    debug "^4.1.1"
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
@@ -14792,6 +14716,11 @@ spdy@^4.0.1:
     select-hose "^2.0.0"
     spdy-transport "^3.0.0"
 
+speakingurl@14.0.1:
+  version "14.0.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/speakingurl/-/speakingurl-14.0.1.tgz#f37ec8ddc4ab98e9600c1c9ec324a8c48d772a53"
+  integrity sha1-837I3cSrmOlgDByewySoxI13KlM=
+
 speed-measure-webpack-plugin@1.3.1:
   version "1.3.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/speed-measure-webpack-plugin/-/speed-measure-webpack-plugin-1.3.1.tgz#69840a5cdc08b4638697dac7db037f595d7f36a0"
@@ -14863,10 +14792,12 @@ stable@^0.1.8:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha1-g26zyDgv4pNv6vVEYxAXzn1Ho88=
 
-stack-utils@^1.0.1:
-  version "1.0.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/stack-utils/-/stack-utils-1.0.2.tgz#33eba3897788558bebfc2db059dc158ec36cebb8"
-  integrity sha1-M+ujiXeIVYvr/C2wWdwVjsNs67g=
+stack-utils@^2.0.2:
+  version "2.0.2"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/stack-utils/-/stack-utils-2.0.2.tgz#5cf48b4557becb4638d0bc4f21d23f5d19586593"
+  integrity sha1-XPSLRVe+y0Y40LxPIdI/XRlYZZM=
+  dependencies:
+    escape-string-regexp "^2.0.0"
 
 static-eval@2.0.2:
   version "2.0.2"
@@ -14952,13 +14883,13 @@ string-hash@^1.1.1:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/string-hash/-/string-hash-1.1.3.tgz#e8aafc0ac1855b4666929ed7dd1275df5d6c811b"
   integrity sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=
 
-string-length@^3.1.0:
-  version "3.1.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/string-length/-/string-length-3.1.0.tgz#107ef8c23456e187a8abd4a61162ff4ac6e25837"
-  integrity sha1-EH74wjRW4Yeoq9SmEWL/SsbiWDc=
+string-length@^4.0.1:
+  version "4.0.1"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/string-length/-/string-length-4.0.1.tgz#4a973bf31ef77c4edbceadd6af2611996985f8a1"
+  integrity sha1-Spc78x73fE7bzq3WryYRmWmF+KE=
   dependencies:
-    astral-regex "^1.0.0"
-    strip-ansi "^5.2.0"
+    char-regex "^1.0.2"
+    strip-ansi "^6.0.0"
 
 string-width@^1.0.1:
   version "1.0.2"
@@ -15110,7 +15041,7 @@ strip-json-comments@2.0.1, strip-json-comments@~2.0.1:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-strip-json-comments@^3.0.1:
+strip-json-comments@^3.1.0:
   version "3.1.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha1-MfEoGzgyYwQ0gxwxDAHMzajL4AY=
@@ -15271,7 +15202,7 @@ symbol-observable@^1.0.2, symbol-observable@^1.0.4, symbol-observable@^1.1.0, sy
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha1-wiaIrtTqs83C3+rLtWFmBWCgCAQ=
 
-symbol-tree@^3.2.2:
+symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha1-QwY30ki6d+B4iDlR+5qg7tfGP6I=
@@ -15585,12 +15516,12 @@ tough-cookie@^3.0.1:
     psl "^1.1.28"
     punycode "^2.1.1"
 
-tr46@^1.0.1:
-  version "1.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/tr46/-/tr46-1.0.1.tgz#a8b13fd6bfd2489519674ccde55ba3693b706d09"
-  integrity sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
+tr46@^2.0.2:
+  version "2.0.2"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/tr46/-/tr46-2.0.2.tgz#03273586def1595ae08fedb38d7733cee91d2479"
+  integrity sha1-Ayc1ht7xWVrgj+2zjXczzukdJHk=
   dependencies:
-    punycode "^2.1.0"
+    punycode "^2.1.1"
 
 tree-kill@1.2.2:
   version "1.2.2"
@@ -15614,21 +15545,21 @@ ts-invariant@^0.4.0, ts-invariant@^0.4.4:
   dependencies:
     tslib "^1.9.3"
 
-ts-jest@25.2.1:
-  version "25.2.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/ts-jest/-/ts-jest-25.2.1.tgz#49bf05da26a8b7fbfbc36b4ae2fcdc2fef35c85d"
-  integrity sha1-Sb8F2iaot/v7w2tK4vzcL+81yF0=
+ts-jest@26.1.3:
+  version "26.1.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/ts-jest/-/ts-jest-26.1.3.tgz#aac928a05fdf13e3e6dfbc8caec3847442667894"
+  integrity sha1-qskooF/fE+Pm37yMrsOEdEJmeJQ=
   dependencies:
     bs-logger "0.x"
     buffer-from "1.x"
     fast-json-stable-stringify "2.x"
+    jest-util "26.x"
     json5 "2.x"
     lodash.memoize "4.x"
     make-error "1.x"
-    mkdirp "0.x"
-    resolve "1.x"
-    semver "^5.5"
-    yargs-parser "^16.1.0"
+    mkdirp "1.x"
+    semver "7.x"
+    yargs-parser "18.x"
 
 ts-loader@5.4.5, ts-loader@^5.3.1:
   version "5.4.5"
@@ -15661,7 +15592,7 @@ ts-morph@^7.0.0:
     "@ts-morph/common" "~0.5.2"
     code-block-writer "^10.1.0"
 
-ts-node@^8:
+ts-node@^8, ts-node@~8.10.2:
   version "8.10.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/ts-node/-/ts-node-8.10.2.tgz#eee03764633b1234ddd37f8db9ec10b75ec7fb8d"
   integrity sha1-7uA3ZGM7EjTd03+NuewQt17H+40=
@@ -15671,20 +15602,6 @@ ts-node@^8:
     make-error "^1.1.1"
     source-map-support "^0.5.17"
     yn "3.1.1"
-
-ts-node@~7.0.0:
-  version "7.0.1"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/ts-node/-/ts-node-7.0.1.tgz#9562dc2d1e6d248d24bc55f773e3f614337d9baf"
-  integrity sha1-lWLcLR5tJI0kvFX3c+P2FDN9m68=
-  dependencies:
-    arrify "^1.0.0"
-    buffer-from "^1.1.0"
-    diff "^3.1.0"
-    make-error "^1.1.1"
-    minimist "^1.2.0"
-    mkdirp "^0.5.1"
-    source-map-support "^0.5.6"
-    yn "^2.0.0"
 
 tsconfig-paths-webpack-plugin@3.2.0:
   version "3.2.0"
@@ -15720,10 +15637,10 @@ tslib@^1, tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha1-yIHhPMcBWJTtkUhi0nZDb6mkcEM=
 
-tslint@~6.0.0:
-  version "6.0.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/tslint/-/tslint-6.0.0.tgz#1c0148beac4779924216302f192cdaa153618310"
-  integrity sha1-HAFIvqxHeZJCFjAvGSzaoVNhgxA=
+tslint@~6.1.2:
+  version "6.1.2"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/tslint/-/tslint-6.1.2.tgz#2433c248512cc5a7b2ab88ad44a6b1b34c6911cf"
+  integrity sha1-JDPCSFEsxaeyq4itRKaxs0xpEc8=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     builtin-modules "^1.1.1"
@@ -15733,7 +15650,7 @@ tslint@~6.0.0:
     glob "^7.1.1"
     js-yaml "^3.13.1"
     minimatch "^3.0.4"
-    mkdirp "^0.5.1"
+    mkdirp "^0.5.3"
     resolve "^1.3.2"
     semver "^5.3.0"
     tslib "^1.10.0"
@@ -15774,6 +15691,13 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
+
+type-check@^0.4.0, type-check@~0.4.0:
+  version "0.4.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/type-check/-/type-check-0.4.0.tgz#07b8203bfa7056c0657050e3ccd2c37730bab8f1"
+  integrity sha1-B7ggO/pwVsBlcFDjzNLDdzC6uPE=
+  dependencies:
+    prelude-ls "^1.2.1"
 
 type-check@~0.3.2:
   version "0.3.2"
@@ -15858,7 +15782,7 @@ typeorm@^0.2.25:
     yargonaut "^1.1.2"
     yargs "^13.2.1"
 
-typescript@~3.9.3, typescript@~3.9.7:
+typescript@~3.9.7:
   version "3.9.7"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha1-mNYApevcOPQMsndSLxLcgA6eJfo=
@@ -16124,7 +16048,7 @@ uuid@8.1.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/uuid/-/uuid-8.1.0.tgz#6f1536eb43249f473abc6bd58ff983da1ca30d8d"
   integrity sha1-bxU260Mkn0c6vGvVj/mD2hyjDY0=
 
-uuid@8.2.0, uuid@^8.0.0:
+uuid@8.2.0, uuid@^8.0.0, uuid@^8.2.0:
   version "8.2.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/uuid/-/uuid-8.2.0.tgz#cb10dd6b118e2dada7d0cd9730ba7417c93d920e"
   integrity sha1-yxDdaxGOLa2n0M2XMLp0F8k9kg4=
@@ -16251,20 +16175,18 @@ vue-template-compiler@^2.6.11:
     de-indent "^1.0.2"
     he "^1.1.0"
 
-w3c-hr-time@^1.0.1:
+w3c-hr-time@^1.0.2:
   version "1.0.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/w3c-hr-time/-/w3c-hr-time-1.0.2.tgz#0a89cdf5cc15822df9c360543676963e0cc308cd"
   integrity sha1-ConN9cwVgi35w2BUNnaWPgzDCM0=
   dependencies:
     browser-process-hrtime "^1.0.0"
 
-w3c-xmlserializer@^1.1.2:
-  version "1.1.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/w3c-xmlserializer/-/w3c-xmlserializer-1.1.2.tgz#30485ca7d70a6fd052420a3d12fd90e6339ce794"
-  integrity sha1-MEhcp9cKb9BSQgo9Ev2Q5jOc55Q=
+w3c-xmlserializer@^2.0.0:
+  version "2.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/w3c-xmlserializer/-/w3c-xmlserializer-2.0.0.tgz#3e7104a05b75146cc60f564380b7f683acf1020a"
+  integrity sha1-PnEEoFt1FGzGD1ZDgLf2g6zxAgo=
   dependencies:
-    domexception "^1.0.1"
-    webidl-conversions "^4.0.2"
     xml-name-validator "^3.0.0"
 
 walker@^1.0.7, walker@~1.0.5:
@@ -16313,10 +16235,15 @@ wcwidth@^1.0.1:
   dependencies:
     defaults "^1.0.3"
 
-webidl-conversions@^4.0.2:
-  version "4.0.2"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
-  integrity sha1-qFWYCx8LazWbodXZ+zmulB+qY60=
+webidl-conversions@^5.0.0:
+  version "5.0.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/webidl-conversions/-/webidl-conversions-5.0.0.tgz#ae59c8a00b121543a2acc65c0434f57b0fc11aff"
+  integrity sha1-rlnIoAsSFUOirMZcBDT1ew/BGv8=
+
+webidl-conversions@^6.1.0:
+  version "6.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/webidl-conversions/-/webidl-conversions-6.1.0.tgz#9111b4d7ea80acd40f5270d666621afa78b69514"
+  integrity sha1-kRG01+qArNQPUnDWZmIa+ni2lRQ=
 
 webpack-core@^0.6.8:
   version "0.6.9"
@@ -16475,7 +16402,7 @@ websocket@1.0.31:
     typedarray-to-buffer "^3.1.5"
     yaeti "^0.0.6"
 
-whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.5:
+whatwg-encoding@^1.0.5:
   version "1.0.5"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/whatwg-encoding/-/whatwg-encoding-1.0.5.tgz#5abacf777c32166a51d085d6b4f3e7d27113ddb0"
   integrity sha1-WrrPd3wyFmpR0IXWtPPn0nET3bA=
@@ -16487,19 +16414,19 @@ whatwg-fetch@>=0.10.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/whatwg-fetch/-/whatwg-fetch-3.2.0.tgz#8e134f701f0a4ab5fda82626f113e2b647fd16dc"
   integrity sha1-jhNPcB8KSrX9qCYm8RPitkf9Ftw=
 
-whatwg-mimetype@^2.2.0, whatwg-mimetype@^2.3.0:
+whatwg-mimetype@^2.3.0:
   version "2.3.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/whatwg-mimetype/-/whatwg-mimetype-2.3.0.tgz#3d4b1e0312d2079879f826aff18dbeeca5960fbf"
   integrity sha1-PUseAxLSB5h5+Cav8Y2+7KWWD78=
 
-whatwg-url@^7.0.0:
-  version "7.1.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/whatwg-url/-/whatwg-url-7.1.0.tgz#c2c492f1eca612988efd3d2266be1b9fc6170d06"
-  integrity sha1-wsSS8eymEpiO/T0iZr4bn8YXDQY=
+whatwg-url@^8.0.0:
+  version "8.1.0"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/whatwg-url/-/whatwg-url-8.1.0.tgz#c628acdcf45b82274ce7281ee31dd3c839791771"
+  integrity sha1-xiis3PRbgidM5yge4x3TyDl5F3E=
   dependencies:
     lodash.sortby "^4.7.0"
-    tr46 "^1.0.1"
-    webidl-conversions "^4.0.2"
+    tr46 "^2.0.2"
+    webidl-conversions "^5.0.0"
 
 when@~3.6.x:
   version "3.6.4"
@@ -16546,7 +16473,7 @@ widest-line@^3.1.0:
   dependencies:
     string-width "^4.0.0"
 
-word-wrap@~1.2.3:
+word-wrap@^1.2.3, word-wrap@~1.2.3:
   version "1.2.3"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha1-YQY29rH3A4kb00dxzLF/uTtHB5w=
@@ -16669,7 +16596,7 @@ ws@^6.0.0, ws@^6.2.1:
   dependencies:
     async-limiter "~1.0.0"
 
-ws@^7.0.0:
+ws@^7.2.3:
   version "7.3.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/ws/-/ws-7.3.1.tgz#d0547bf67f7ce4f12a72dfe31262c68d7dc551c8"
   integrity sha1-0FR79n985PEqct/jEmLGjX3FUcg=
@@ -16704,7 +16631,7 @@ xmlbuilder@~11.0.0:
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
   integrity sha1-vpuuHIoEbnazESdyY0fQrXACvrM=
 
-xmlchars@^2.1.1:
+xmlchars@^2.2.0:
   version "2.2.0"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/xmlchars/-/xmlchars-2.2.0.tgz#060fe1bcb7f9c76fe2a17db86a9bc3ab894210cb"
   integrity sha1-Bg/hvLf5x2/ioX24apvDq4lCEMs=
@@ -16713,13 +16640,6 @@ xmlhttprequest-ssl@~1.5.4:
   version "1.5.5"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.5.tgz#c2876b06168aadc40e57d97e81191ac8f4398b3e"
   integrity sha1-wodrBhaKrcQOV9l+gRkayPQ5iz4=
-
-xregexp@^4.3.0:
-  version "4.3.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/xregexp/-/xregexp-4.3.0.tgz#7e92e73d9174a99a59743f67a4ce879a04b5ae50"
-  integrity sha1-fpLnPZF0qZpZdD9npM6HmgS1rlA=
-  dependencies:
-    "@babel/runtime-corejs3" "^7.8.3"
 
 xss@^1.0.6:
   version "1.0.7"
@@ -16785,6 +16705,14 @@ yargs-parser@10.0.0:
   dependencies:
     camelcase "^4.1.0"
 
+yargs-parser@18.x, yargs-parser@^18.1.2:
+  version "18.1.3"
+  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/yargs-parser/-/yargs-parser-18.1.3.tgz#be68c4975c6b2abf469236b0c870362fab09a7b0"
+  integrity sha1-vmjEl1xrKr9GkjawyHA2L6sJp7A=
+  dependencies:
+    camelcase "^5.0.0"
+    decamelize "^1.2.0"
+
 yargs-parser@^11.1.1:
   version "11.1.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/yargs-parser/-/yargs-parser-11.1.1.tgz#879a0865973bca9f6bab5cbdf3b1c67ec7d3bcf4"
@@ -16797,22 +16725,6 @@ yargs-parser@^13.1.2:
   version "13.1.2"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/yargs-parser/-/yargs-parser-13.1.2.tgz#130f09702ebaeef2650d54ce6e3e5706f7a4fb38"
   integrity sha1-Ew8JcC667vJlDVTObj5XBvek+zg=
-  dependencies:
-    camelcase "^5.0.0"
-    decamelize "^1.2.0"
-
-yargs-parser@^16.1.0:
-  version "16.1.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/yargs-parser/-/yargs-parser-16.1.0.tgz#73747d53ae187e7b8dbe333f95714c76ea00ecf1"
-  integrity sha1-c3R9U64YfnuNvjM/lXFMduoA7PE=
-  dependencies:
-    camelcase "^5.0.0"
-    decamelize "^1.2.0"
-
-yargs-parser@^18.1.2:
-  version "18.1.3"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/yargs-parser/-/yargs-parser-18.1.3.tgz#be68c4975c6b2abf469236b0c870362fab09a7b0"
-  integrity sha1-vmjEl1xrKr9GkjawyHA2L6sJp7A=
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
@@ -16915,11 +16827,6 @@ yn@3.1.1:
   version "3.1.1"
   resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha1-HodAGgnXZ8HV6rJqbkwYUYLS61A=
-
-yn@^2.0.0:
-  version "2.0.0"
-  resolved "https://artifacts.werally.in:443/artifactory/api/npm/npm/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
-  integrity sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
 
 zen-observable-ts@^0.8.21:
   version "0.8.21"
