@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled, { css } from 'react-emotion';
+import styled, { css } from '@emotion/styled';
 import { size } from 'polished';
 
 import Button from './button';

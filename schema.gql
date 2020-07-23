@@ -54,6 +54,7 @@ type Query {
 
 type Mutation {
   bookTrips(launchIds: [ID!]!): TripUpdateResponse!
+  cancelTrip(launchId: String!): TripUpdateResponse!
   signIn(email: String!): String!
   signUp(email: String!, userName: String!, lastName: String!, firstName: String!): User!
 }
