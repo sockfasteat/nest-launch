@@ -45,7 +45,7 @@
     "apollo-server": "^2.16.0",
     "apollo-server-testing": "^2.16.0",
     "class-validator": "^0.12.2",
-    "document-register-element": "1.14.3",
+    "document-register-element": "1.14.5",
     "emotion": "^10.0.27",
     "graphql": "^15.3.0",
     "graphql-tag": "^2.10.4",
