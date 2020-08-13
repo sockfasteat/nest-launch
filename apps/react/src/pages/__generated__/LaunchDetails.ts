@@ -30,7 +30,7 @@ export interface LaunchDetails_launch {
 }
 
 export interface LaunchDetails {
-  launch: LaunchDetails_launch | null;
+  getLaunch: LaunchDetails_launch | null;
 }
 
 export interface LaunchDetailsVariables {

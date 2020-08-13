@@ -13,15 +13,19 @@ export const GET_CART_ITEMS = gql`
   }
 `;
 
-interface CartProps extends RouteComponentProps {}
+type CartProps = RouteComponentProps
 
 const Cart: React.FC<CartProps> = () => {
   const { data, loading, error } = useQuery<GetCartItems>(
     GET_CART_ITEMS
   );
-  
-  if (loading) return <Loading />;
-  if (error) return <p>ERROR: {error.message}</p>;
+  console.log('data: ', data);
+  if (loading) {
+    return <Loading />;
+  }
+  if (error) {
+    return <p>ERROR: {error.message}</p>;
+  }
 
   return (
     <Fragment>

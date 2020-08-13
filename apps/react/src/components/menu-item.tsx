@@ -1,4 +1,5 @@
-import styled, { css } from '@emotion/styled';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { Link } from '@reach/router';
 import { colors, unit } from '../styles';
 

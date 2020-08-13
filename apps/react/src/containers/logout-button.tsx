@@ -6,7 +6,8 @@ import { menuItemClassName } from '../components/menu-item';
 import { ReactComponent as ExitIcon } from '../assets/icons/exit.svg';
 
 const LogoutButton = () => {
-  const client = useApolloClient();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const client: any = useApolloClient();
   return (
     <StyledButton
       data-testid="logout-button"

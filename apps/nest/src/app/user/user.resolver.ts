@@ -9,7 +9,7 @@ export class UserResolver {
   @Query(returns => Boolean)
   async isBooked(
     @Context('dataSources') { userAPI }: DataSources,
-    @Args('launchId') launchId: string,
+    @Args('launchId', { type: () => [ID] }) launchId: number,
   ): Promise<boolean> {
     return await userAPI.isBookedOnLaunch({ launchId });
   }
@@ -54,7 +54,7 @@ export class UserResolver {
   @Mutation(returns => TripUpdateResponse)
   async cancelTrip(
     @Context('dataSources') { userAPI, launchAPI }: DataSources,
-    @Args('launchId') launchId: string,
+    @Args('launchId', { type: () => ID }) launchId: number,
   ): Promise<TripUpdateResponse> {
     const result = userAPI.cancelTrip({ launchId });
 

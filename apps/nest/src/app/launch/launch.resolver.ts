@@ -1,4 +1,4 @@
-import { Query, Resolver, Args, Context } from '@nestjs/graphql';
+import { Query, Resolver, Args, Context, ID } from '@nestjs/graphql';
 import { paginateResults } from '../utils/utils';
 import { Launch } from './models/launch.model';
 import { LaunchConnection } from './models/launch-connection.model';
@@ -11,7 +11,7 @@ export class LaunchResolver {
   @Query(returns => Launch)
   async getLaunch(
     @Context('dataSources') { launchAPI }: DataSources,
-    @Args('id') id: number,
+    @Args('id', { type: () => ID }) id: number,
   ): Promise<Launch> {
     return await launchAPI.getLaunchById({ launchId: id })
   }
@@ -20,7 +20,9 @@ export class LaunchResolver {
   @Query(returns => LaunchConnection)
   async getLaunches(
     @Context('dataSources') { launchAPI }: DataSources,
-    @Args('pageSize') pageSize: number = 20,
+    @Args('pageSize', {
+      nullable: true,
+    }) pageSize: number = 20,
     @Args('after', {
       nullable: true,
     }) after?: string,

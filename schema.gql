@@ -43,9 +43,9 @@ type User {
 }
 
 type Query {
-  getLaunch(id: Float!): Launch!
-  getLaunches(after: String, pageSize: Float!): LaunchConnection!
-  isBooked(launchId: String!): Boolean!
+  getLaunch(id: ID!): Launch!
+  getLaunches(after: String, pageSize: Float): LaunchConnection!
+  isBooked(launchId: [ID!]!): Boolean!
   getTrips: [Launch!]!
 
   """Returns the current logged user."""
@@ -54,7 +54,7 @@ type Query {
 
 type Mutation {
   bookTrips(launchIds: [ID!]!): TripUpdateResponse!
-  cancelTrip(launchId: String!): TripUpdateResponse!
+  cancelTrip(launchId: ID!): TripUpdateResponse!
   signIn(email: String!): String!
   signUp(email: String!, userName: String!, lastName: String!, firstName: String!): User!
 }

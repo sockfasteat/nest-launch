@@ -34,7 +34,7 @@ export interface GetLaunchList_launches {
 }
 
 export interface GetLaunchList {
-  launches: GetLaunchList_launches;
+  getLaunches: GetLaunchList_launches;
 }
 
 export interface GetLaunchListVariables {

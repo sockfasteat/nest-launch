@@ -10,7 +10,7 @@ import * as LaunchDetailsTypes from './__generated__/LaunchDetails';
 
 export const GET_LAUNCH_DETAILS = gql`
   query LaunchDetails($launchId: ID!) {
-    launch(id: $launchId) {
+    getLaunch(id: $launchId) {
       isInCart @client
       site
       rocket {
@@ -27,28 +27,28 @@ interface LaunchProps extends RouteComponentProps {
 }
 
 const Launch: React.FC<LaunchProps> = ({ launchId }) => {
-  const { 
-    data, 
-    loading, 
-    error 
+  const {
+    data,
+    loading,
+    error
   } = useQuery<
-    LaunchDetailsTypes.LaunchDetails, 
+    LaunchDetailsTypes.LaunchDetails,
     LaunchDetailsTypes.LaunchDetailsVariables
-  >(GET_LAUNCH_DETAILS, 
+  >(GET_LAUNCH_DETAILS,
     { variables: { launchId } }
   );
-  
+
   if (loading) return <Loading />;
   if (error) return <p>ERROR: {error.message}</p>;
   if (!data) return <p>Not found</p>;
 
   return (
     <Fragment>
-      <Header image={data.launch && data.launch.mission && data.launch.mission.missionPatch}>
-        {data && data.launch && data.launch.mission && data.launch.mission.name}
+      <Header image={data.getLaunch && data.getLaunch.mission && data.getLaunch.mission.missionPatch}>
+        {data && data.getLaunch && data.getLaunch.mission && data.getLaunch.mission.name}
       </Header>
-      <LaunchDetail {...data.launch} />
-      <ActionButton {...data.launch} />
+      <LaunchDetail {...data.getLaunch} />
+      <ActionButton {...data.getLaunch} />
     </Fragment>
   );
 }

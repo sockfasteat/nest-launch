@@ -20,7 +20,7 @@ export const BOOK_TRIPS = gql`
   }
 `;
 
-interface BookTripsProps extends GetCartItemsTypes.GetCartItems {}
+type BookTripsProps = GetCartItemsTypes.GetCartItems
 
 const BookTrips: React.FC<BookTripsProps> = ({ cartItems }) => {
   const [bookTrips, { data }] = useMutation<BookTripsTypes.BookTrips, BookTripsTypes.BookTripsVariables>(
@@ -31,7 +31,8 @@ const BookTrips: React.FC<BookTripsProps> = ({ cartItems }) => {
         query: GET_LAUNCH,
         variables: { launchId },
       })),
-      update(cache) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      update(cache: any) {
         cache.writeData({ data: { cartItems: [] } });
       }
     }
@@ -40,8 +41,8 @@ const BookTrips: React.FC<BookTripsProps> = ({ cartItems }) => {
   return data && data.bookTrips && !data.bookTrips.success
     ? <p data-testid="message">{data.bookTrips.message}</p>
     : (
-      <Button 
-        onClick={() => bookTrips()} 
+      <Button
+        onClick={() => bookTrips()}
         data-testid="book-button">
         Book All
       </Button>

@@ -10,7 +10,7 @@ export const LAUNCH_TILE_DATA = gql`
   fragment LaunchTile on Launch {
     __typename
     id
-    isBooked
+#    isBooked
     rocket {
       id
       name
@@ -24,7 +24,7 @@ export const LAUNCH_TILE_DATA = gql`
 
 export const GET_LAUNCHES = gql`
   query GetLaunchList($after: String) {
-    launches(after: $after) {
+    getLaunches(after: $after) {
       cursor
       hasMore
       launches {
@@ -38,13 +38,13 @@ export const GET_LAUNCHES = gql`
 interface LaunchesProps extends RouteComponentProps {}
 
 const Launches: React.FC<LaunchesProps> = () => {
-  const { 
-    data, 
-    loading, 
-    error, 
-    fetchMore 
+  const {
+    data,
+    loading,
+    error,
+    fetchMore
   } = useQuery<
-    GetLaunchListTypes.GetLaunchList, 
+    GetLaunchListTypes.GetLaunchList,
     GetLaunchListTypes.GetLaunchListVariables
   >(GET_LAUNCHES);
 
@@ -54,28 +54,30 @@ const Launches: React.FC<LaunchesProps> = () => {
   return (
     <Fragment>
       <Header />
-      {data.launches &&
-        data.launches.launches &&
-        data.launches.launches.map((launch: any) => (
+      {data.getLaunches &&
+        data.getLaunches.launches &&
+        data.getLaunches.launches.map((launch: any) => (
           <LaunchTile key={launch.id} launch={launch} />
         ))}
-      {data.launches &&
-        data.launches.hasMore && (
+      {data.getLaunches &&
+        data.getLaunches.hasMore && (
           <Button
             onClick={() =>
               fetchMore({
                 variables: {
-                  after: data.launches.cursor,
+                  after: `${data.getLaunches.cursor}`,
                 },
                 updateQuery: (prev, { fetchMoreResult, ...rest }) => {
-                  if (!fetchMoreResult) return prev;
+                  if (!fetchMoreResult) {
+                    return prev;
+                  }
                   return {
                     ...fetchMoreResult,
                     launches: {
-                      ...fetchMoreResult.launches,
+                      ...fetchMoreResult.getLaunches,
                       launches: [
-                        ...prev.launches.launches,
-                        ...fetchMoreResult.launches.launches,
+                        ...prev.getLaunches.launches,
+                        ...fetchMoreResult.getLaunches.launches,
                       ],
                     },
                   };
